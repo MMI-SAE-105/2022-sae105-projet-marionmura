@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/indexstyle.css"/>
+    <title>mind-interest</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="public/img/icons/logov1.webp" alt="logo du site"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen">
+            <img src="public/img/icons/menu.webp" alt="bouton menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+            <div class="menu">
+                <ul>
+                    <li><img src="public/img/icons/playericon.webp" alt="player icone">
+                        <a href="leventseleve.html">Le Vent se lève</a>
+                    </li>
+                    <li><img src="public/img/icons/playericon.webp" alt="player icone">
+                        <a href="filmographie.html">Myazaki et sa filmographie</a>
+                    </li>
+                    <li><img src="public/img/icons/musicicon.webp" alt="musique icone">
+                        <a href="headup.html">Head Up - The Score</a>
+                    </li>
+                    <li><img src="public/img/icons/bookicon.webp" alt="livre icone">
+                        <a href="cartographie.html">Cartographie d'un univers</a>
+                    </li>
+                    <li><img src="public/img/icons/lieuxicon.webp" alt="épingle icone">
+                        <a href="nottingham.html">Nottingham</a>
+                    </li>
+                    <li><img src="public/img/icons/espoirsicon.webp" alt="étoiles icone">
+                        <a href="sionvoyageait.html">Et si on voyageait ?</a>
+                    </li>
+                    <li><img src="public/img/icons/brokenhearticon.webp" alt="coeur brisé icone">
+                        <a href="ressourcesterrestres.html">Ressources et déclin</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="public/img/icons/bookicon.webp" alt="livre icone">
+                        <a href="glossaire.html">Glossaire</a>
+                    </li>
+                    <li><img src="public/img/icons/avionmenuicon.webp" alt="avion icone">
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                    <li><img src="public/img/icons/plusicon.webp" alt="plus icone">
+                        <a href="autresprojets.html">Autres projets</a>
+                    </li>
+                    <li><img src="public/img/icons/bonhommeicon.webp" alt="bonhomme content icone">
+                        <a href="apropos.html">À popos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <footer>
+        <h2>MENTIONS LÉGALES</h2>
+        <p>Projet réalisé dans le cadre d’un exercice au <a href="http://mmimontbeliard.com/">département MMi de Montbéliard</a>
+        </p>
+        <p>Marion Mura MMi 1 groupe B2 
+            <a href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a>
+        </p>
+        <a href="#"><img src="public/img/icons/logov2.webp" alt="logo pour retour à la page d'accueil">
+        </a>
+        <a href="http://mmimontbeliard.com/">
+            <img src="public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
+        </a>
+    </footer>
+</body>
+</html>
