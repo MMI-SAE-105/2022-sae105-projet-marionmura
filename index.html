@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen:false}" x-bind:class="{noscroll:menuIsOpen,}">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/indexstyle.css"/>
     <title>mind-interest</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
 
@@ -13,10 +12,10 @@
 <body>
     <header>
         <a href="#"><img src="public/img/icons/logov1.webp" alt="logo du site"></a>
-        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen">
+        <button >
             <img src="public/img/icons/menu.webp" alt="bouton menu">
         </button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+        <nav>
             <div class="menu">
                 <ul>
                     <li><img src="public/img/icons/playericon.webp" alt="player icone">
