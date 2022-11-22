@@ -1,0 +1,15 @@
+/* Les police de caractère */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+/* Librairies */
+@import "vendors/normalize.css";
+
+/*utilitaires*/
+@import "utils/variables.css";
+
+/*règles de base*/
+@import "base/main.css";
+@import "base/media.css";
+
+/*règles de composition*/
+/*composants*/
