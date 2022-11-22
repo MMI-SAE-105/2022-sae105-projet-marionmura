@@ -11,100 +11,99 @@
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="public/img/icons/logov1.webp" alt="logo du site"></a>
+    <header class="header">
+        <a class="header__logo-link" href="#">
+            <img class="header__logo" src="public/img/icons/logov1.webp" alt="logo du site"></a>
         <button >
             <img src="public/img/icons/menu.webp" alt="bouton menu">
         </button>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="leventseleve.html">Le Vent se lève</a>
-                    </li>
-                    <li>
-                        <a href="filmographie.html">Myazaki et sa filmographie</a>
-                    </li>
-                    <li>
-                        <a href="headup.html">Head Up - The Score</a>
-                    </li>
-                    <li>
-                        <a href="cartographie.html">Cartographie d'un univers</a>
-                    </li>
-                    <li>
-                        <a href="nottingham.html">Nottingham</a>
-                    </li>
-                    <li>
-                        <a href="sionvoyageait.html">Et si on voyageait ?</a>
-                    </li>
-                    <li>
-                        <a href="ressourcesterrestres.html">Ressources et déclin</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="glossaire.html">Glossaire</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Contacts</a>
-                    </li>
-                    <li>
-                        <a href="autresprojets.html">Autres projets</a>
-                    </li>
-                    <li>
-                        <a href="apropos.html">À popos</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="filmographie.html">Myazaki et sa filmographie</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="headup.html">Head Up - The Score</a>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="cartographie.html">Cartographie d'un univers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="nottingham.html">Nottingham</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="sionvoyageait.html">Et si on voyageait ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="ressourcesterrestres.html">Ressources et déclin</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="glossaire.html">Glossaire</a>  
+                </li class="menu__item">
+                <li>
+                    <a class="menu__link" href="contacts.html">Contacts</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="autresprojets.html">Autres projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="apropos.html">À popos</a>
+                </li>
+            </ul>
         </nav>
     </header>
     
     <main>
-        <section>
-            <h1>Mind-interest</h1>
+        <section class="header__body">
+            <h1 class="header__titre">Mind-interest</h1>
             <img src="public/img/img/homepage/homepage.webp" alt="image page d'accueil">
             <p>Et si on voyageait ?</p>
         </section>
-        <section>
-            <h3>"Le vent se lève</h3>
+        <section class="preview">
+            <h3 class="preview__titre">"Le vent se lève</h3>
             <img src="public/img/img/homepage/imagepreview-0.webp" alt="Jirô et son avion">
-            <p>Sorti en 2013, ce film d'animation des studios Ghibli témoigne d'une histoire touchante entre un ingénieur et une jeune fille.</p>
+            <p class="preview_description">Sorti en 2013, ce film d'animation des studios Ghibli témoigne d'une histoire touchante entre un ingénieur et une jeune fille.</p>
             <a href="leventseleve.html">en lire plus</a>
         </section>
-        <section>
-            <h3>Filmographie</h3>
+        <section class="preview">
+            <h3 class="preview__titre">Filmographie</h3>
             <img src="public/img/img/homepage/imagepreview-1.webp" alt="image du film de Princesse Mononoke">
-            <p>Venez découvrir les films d’animation réalisés par Hayao Miyazaki.</p>
+            <p class="preview_description">Venez découvrir les films d’animation réalisés par Hayao Miyazaki.</p>
             <a href="filmographie.html">en lire plus</a>
         </section>
-        <section>
-            <h3>Head Up - The Score</h3>
+        <section class="preview">
+            <h3 class="preview__titre">Head Up - The Score</h3>
             <img src="public/img/img/homepage/imagepreview-2.webp" alt="Cover de l'album Head Up">
-            <p>Sortie en 2021, cette musique composée par le groupe The Score mérite un petit coup d'œil.</p>
+            <p class="preview_description">Sortie en 2021, cette musique composée par le groupe The Score mérite un petit coup d'œil.</p>
             <a href="headup.html">en lire plus</a>
         </section>
-        <section>
-            <h3>Cartographie d'un univers</h3>
+        <section class="preview">
+            <h3 class="preview__titre">Cartographie d'un univers</h3>
             <img src="public/img/img/homepage/imagepreview-3.webp" alt="image de Totoro">
-            <p>En savoir plus sur l'univers des films Ghibli ? C'est possible et il est plus accessible que vous ne le croyez !</p>
+            <p class="preview_description">En savoir plus sur l'univers des films Ghibli ? C'est possible et il est plus accessible que vous ne le croyez !</p>
             <a href="cartographie.html">en lire plus</a>
         </section>
-        <section>
-            <h3>Nottingham</h3>
+        <section class="preview">
+            <h3 class="preview__titre">Nottingham</h3>
             <img src="public/img/img/homepage/imagepreview-4.webp" alt="House Council de Nottingham">
-            <p>Vous rêvez de voyager ? Et si on visitait Nottingham et des lieux “jumeaux” de la ville ?</p>
+            <p class="preview_description">Vous rêvez de voyager ? Et si on visitait Nottingham et des lieux “jumeaux” de la ville ?</p>
             <a href="nottingham.html">en lire plus</a>
         </section>
-        <section>
-            <h3>Et si on voyageait ?</h3>
+        <section class="preview">
+            <h3 class="preview__titre">Et si on voyageait ?</h3>
             <img src="public/img/img/homepage/imagepreview-5.webp" alt="avion dans le film Le Vent se lève">
-            <p>Moyens de transports que vous connaissez et empruntez probablement tous les jours. Comment ont-ils évolué ?  </p>
+            <p class="preview_description">Moyens de transports que vous connaissez et empruntez probablement tous les jours. Comment ont-ils évolué ?  </p>
             <a href="sionvoyageait.html">en lire plus</a>
         </section>
-        <section>
-            <h3>Ressources et déclin</h3>
+        <section class="preview">
+            <h3 class="preview__titre">Ressources et déclin</h3>
             <img src="public/img/img/homepage/imagepreview-6.webp" alt="Train dans la forêt">
-            <p>L'avenir de la planète vous préoccupe ? Les ressources terrestres disponibles restent une source d'inquiétude.</p>
+            <p class="preview_description">L'avenir de la planète vous préoccupe ? Les ressources terrestres disponibles restent une source d'inquiétude.</p>
             <a href="ressourcesterrestres.html">en lire plus</a>
         </section>
     </main>
