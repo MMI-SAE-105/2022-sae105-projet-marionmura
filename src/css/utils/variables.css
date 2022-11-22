@@ -1,28 +1,23 @@
 :root{
     /* Color styles */
---042-f6-e: rgba(4, 47, 110, 1);
---3-c72-c-b: rgba(60, 114, 203, 1);
---b1-d-e-f-f: rgba(177, 222, 255, 1);
---d3-e4-f-d: rgba(211, 228, 253, 1);
+--bleufooter: rgba(4, 47, 110, 1);
+--bleumenu: rgba(60, 114, 203, 1);
+--bleubackground: rgba(211, 228, 253, 1);
 --blanc: rgba(255, 255, 255, 1);
---couleur-h3: rgba(0, 0, 0, 0.6000000238418579);
---texte: rgba(0, 0, 0, 1);
---05-c-b-e6: rgba(5, 203, 230, 1);
---109-d-f1: rgba(16, 157, 241, 1);
---0584-c7: rgba(5, 132, 199, 1);
+--gris: rgba(0, 0, 0, 0.6000000238418579);
+--noir: rgba(0, 0, 0, 1);
+
 
 /* Text-size styles */
---logo-typo-text: 13px;
---titre--mention-légale-typo: 20px;
---h1-typo-menu: 24px;
---h1--titres-articles: 22px;
---h2-articles: 16px;
---body: 14px;
---lyrics: 15px;
 --légendes: 12px;
---typo-legendefrise: 18px;
 --titres-projets-autres-étudiants: 13px;
---h2-preview-typo-des-bulles: 15px;
+--body: 14px;
+--lyrics-h2previewbulleshomepage: 15px;
+--h2-articles: 16px;
+--typo-legendefrise: 18px;
+--titre--mention-légale-typo: 20px;
+--h1--titres-articles: 22px;
+--h1-typo-menu: 24px;
 
 /* Effect styles */
 --articleblur:  -1px 3px 6px rgba(4, 47, 110, 0.15);
