@@ -2,16 +2,22 @@
     background-color:rgba(255, 255, 255, 1);
     border-radius:10px;
     box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
-    width:auto;
-    margin: 17%,17%,30%;
+    width:80%;
+    list-style:none;
+    height:auto;
+    margin:auto;
+    cursor:pointer;
 }
 .preview__titre{
     font-family:Montserrat;
     font-size:15px;
     font-weight:800px;
+    padding:0px;
+    float:right;
 }
 .preview__description{
     font-family:Montserrat;
     font-size:12px;
     font-weight: 100;
+    float:right;
 }
