@@ -2,4 +2,15 @@
     background-color:rgba(255, 255, 255, 1);
     border-radius:10px;
     box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
+    width:auto;
+    position:sticky;
+}
+.preview__titre{
+    font-family:Montserrat;
+    font-size:15px;
+    font-weight:800px;
+}
+.preview__description{
+    font-family:Montserrat;
+    font-weight: 100;
 }
