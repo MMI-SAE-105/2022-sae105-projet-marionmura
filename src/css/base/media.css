@@ -1,5 +1,13 @@
 /* Pour rendre les images responsives */
 img {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+  position:relative;
+}
+
+.preview__img{
+  max-width:20%;
+  max-height:20%;
+  position:relative;
+  padding:
+}

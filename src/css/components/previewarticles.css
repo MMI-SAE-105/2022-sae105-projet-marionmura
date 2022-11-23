@@ -3,7 +3,7 @@
     border-radius:10px;
     box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
     width:auto;
-    position:sticky;
+    margin: 17%,17%,30%;
 }
 .preview__titre{
     font-family:Montserrat;
@@ -12,5 +12,6 @@
 }
 .preview__description{
     font-family:Montserrat;
+    font-size:12px;
     font-weight: 100;
 }
