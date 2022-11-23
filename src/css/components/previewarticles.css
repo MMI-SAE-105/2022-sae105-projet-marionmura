@@ -1,0 +1,5 @@
+.preview{
+    background-color:rgba(255, 255, 255, 1);
+    border-radius:10px;
+    box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
+}
