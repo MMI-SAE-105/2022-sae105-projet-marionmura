@@ -20,5 +20,18 @@ body{
 h1{
     font-family: Dancing script;
     font-size:24px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+}
+
+h2{
+    font-family: montserrat;
+    font-weight:900;
+    font-size:16px;
+    color:rgba(0, 0, 0, 0.6000000238418579);
+}
+
+p{
+    font-family:montserrat;
+    font-size:14px;
+
 }

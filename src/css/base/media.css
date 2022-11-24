@@ -3,7 +3,7 @@ img {
   max-width: 100%;
   height: auto;
   position:relative;
-  padding:2em;
+  padding:1em;
 }
 
 .preview__img{
@@ -11,4 +11,14 @@ img {
   max-height:30%;
   position:relative;
   padding:2em;
+}
+
+.img__article{
+  max-width: 100%;
+  height: auto;
+  position:relative;
+  display:block;
+  padding:2em;
+  margin-left: auto;
+  margin-right:auto;
 }
