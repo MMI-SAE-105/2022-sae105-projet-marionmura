@@ -3,7 +3,6 @@
     border-radius:10px;
     box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
     width:80%;
-    display:inline-block;
     list-style:none;
     height:auto;
     margin:auto;
@@ -13,14 +12,16 @@
     font-family:Montserrat;
     font-size:15px;
     font-weight:800px;
-    padding:0px;
-    float:right;
+    margin:10px;
+    display:inline-block;
+    text-align:right;
+
 }
 .preview__description{
     font-family:Montserrat;
     font-size:12px;
     font-weight: 100;
-    vertical-align:middle;
+    vertical-align:right;
     margin:0px;
     float:right;
 }

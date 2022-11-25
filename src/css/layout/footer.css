@@ -1,0 +1,12 @@
+footer{
+    background-color: rgba(4, 47, 110, 1);
+    padding:2em;
+}
+
+.footer__h2{
+    color:white;
+}
+
+.footer__p, .footer__a{
+    color:white;
+}
