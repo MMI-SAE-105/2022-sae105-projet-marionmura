@@ -6,7 +6,11 @@ footer{
 .footer__h2{
     color:white;
 }
+.footer__p{
+    text-align: center;
+    vertical-align:center;
+}
 
-.footer__p, .footer__a{
+.footer__h2, .footer__p, .footer__a{
     color:white;
 }
