@@ -2,26 +2,45 @@
     background-color:rgba(255, 255, 255, 1);
     border-radius:10px;
     box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
-    width:80%;
     list-style:none;
+    cursor:pointer;
+    vertical-align:middle;
+    padding-left:0em;
+    padding-right:1em;
+    padding-bottom:2em;
+    padding-top:2em;
+    width:auto;
     height:auto;
     margin:auto;
-    cursor:pointer;
 }
+
+li{
+    display:inline-block;
+    list-style:none;
+}
+
+.preview__alignement{
+    float:left;
+    margin:0;
+    padding:0;
+}
+.preview__alignementdroite{
+    text-align:right;
+}
+.preview__classtest{
+    display:inline-block;
+
+}
+
 .preview__titre{
     font-family:Montserrat;
     font-size:15px;
     font-weight:800px;
-    margin:10px;
-    display:inline-block;
-    text-align:right;
-
+    margin:0px;
 }
 .preview__description{
     font-family:Montserrat;
     font-size:12px;
     font-weight: 100;
-    vertical-align:right;
     margin:0px;
-    float:right;
 }
