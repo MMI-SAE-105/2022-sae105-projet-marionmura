@@ -9,9 +9,9 @@
     padding-right:1em;
     padding-bottom:2em;
     padding-top:2em;
-    width:auto;
+    width:90%;
     height:auto;
-    margin:auto;
+    margin:1em;
 }
 
 li{
@@ -26,10 +26,6 @@ li{
 }
 .preview__alignementdroite{
     text-align:right;
-}
-.preview__classtest{
-    display:inline-block;
-
 }
 
 .preview__titre{
