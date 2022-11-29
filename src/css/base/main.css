@@ -12,7 +12,7 @@ body{
     margin-right:2%;
 }
 
-.header__titre{
+.header__titre, .section__avoirplus{
     font-family: Dancing script;
     font-size:var(--h1-typo-menu);
     color:var(--bleufooter);
