@@ -1,7 +1,7 @@
 .preview{
-    background-color:rgba(255, 255, 255, 1);
+    background-color:var(--blanc);
     border-radius:10px;
-    box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
+    box-shadow:var(--articleblur);
     list-style:none;
     cursor:pointer;
     vertical-align:middle;
@@ -35,13 +35,13 @@ li{
 
 .preview__titre{
     font-family:Montserrat;
-    font-size:15px;
+    font-size:var(--lyrics-h2previewbulleshomepage);
     font-weight:800px;
     margin:0px;
 }
 .preview__description{
     font-family:Montserrat;
-    font-size:12px;
+    font-size:var(--légendes);
     font-weight: 100;
     margin:0px;
 }

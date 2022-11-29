@@ -1,5 +1,5 @@
 .header {
-    background-color:rgba(60, 114, 203, 1);
+    background-color:var(--bleumenu);
     position:fixed;
     top:0px;
     left:0;
