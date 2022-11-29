@@ -1,12 +1,12 @@
 body{
-    background-color: rgba(211, 228, 253, 1);
+    background-color:var(--bleubackground);
     margin-top:7em;
 }
 
 .bulle{
-    background-color:rgba(255, 255, 255, 1);
+    background-color:var(--blanc);
     border-radius:5px;
-    box-shadow:-1px 3px 6px rgba(4, 47, 110, 0.15);
+    box-shadow:var(--articleblur);
     width:auto;
     margin-left: 2%;
     margin-right:2%;
@@ -14,26 +14,26 @@ body{
 
 .header__titre{
     font-family: Dancing script;
-    font-size:24px;
-    color: rgba(4, 47, 110, 1);
+    font-size:var(--h1-typo-menu);
+    color:var(--bleufooter);
     text-align:center;
 }
 
 h1{
     font-family: Dancing script;
-    font-size:24px;
+    font-size:var(--h1--titres-articles);
     letter-spacing: 1.5px;
 }
 
 h2{
     font-family: montserrat;
     font-weight:900;
-    font-size:16px;
-    color:rgba(0, 0, 0, 0.6000000238418579);
+    font-size:var(--h2-articles);
+    color:var(--gris);
 }
 
 p{
     font-family:montserrat;
-    font-size:14px;
+    font-size:var(--body);
 
 }
