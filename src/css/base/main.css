@@ -14,21 +14,21 @@ body{
 }
 
 .header__titre, .section__avoirplus{
-    font-family: Dancing script;
+    font-family: var(--font-title);
     font-size:var(--h1-typo-menu);
     color:var(--bleufooter);
     text-align:center;
 }
 
 h1{
-    font-family: Dancing script;
+    font-family: var(--font-title);
     font-size:var(--h1--titres-articles);
     letter-spacing: 1,5px;
     padding:1rem;
 }
 
 h2{
-    font-family: montserrat;
+    font-family: var(--font-body);
     font-weight:900;
     font-size:var(--h2-articles);
     color:var(--gris);
@@ -36,14 +36,14 @@ h2{
 }
 
 p{
-    font-family:montserrat;
+    font-family:var(--font-body);
     font-size:var(--body);
     padding:1rem;
     padding-top:0;
 }
 
 figcaption {
-    font-family:montserrat;
+    font-family:var(--font-body);
     font-size:var(--légendes);
     color:var(--gris);
 }

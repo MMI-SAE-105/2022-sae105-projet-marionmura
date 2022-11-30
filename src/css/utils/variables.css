@@ -22,4 +22,8 @@
 /* Effect styles */
 --articleblur:  -1px 3px 6px rgba(4, 47, 110, 0.15);
 
+/* Typography */
+--font-body: 'Montserrat';
+--font-title: 'Dancing Script';
+
 }

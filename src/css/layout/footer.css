@@ -1,6 +1,7 @@
 footer{
     background-color:var(--bleufooter);
     padding:2em;
+    margin-top:2rem;
 }
 
 .footer__h2{
