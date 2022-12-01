@@ -42,8 +42,12 @@ p{
     padding-top:0;
 }
 
-figcaption {
+figcaption, .extract {
     font-family:var(--font-body);
     font-size:var(--légendes);
+    color:var(--gris);
+}
+
+.livre_caption{
     color:var(--gris);
 }
