@@ -18,10 +18,10 @@ footer{
 }
 
 .footer__logo{
-    width:25%;
-    height:25%;
+    width:20%;
+    height:20%;
     margin:auto;
-    padding-left:3rem;
+    padding-left:4rem;
     vertical-align: middle;
     display:inline-flex;
 }
