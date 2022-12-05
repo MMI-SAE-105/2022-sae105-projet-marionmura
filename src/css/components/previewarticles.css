@@ -14,34 +14,25 @@
     margin:1em;
 }
 
-li{
-    list-style:none;
-    gap: 0;
-}
-
-/*li >p {
-    padding-right: 10em;
-}*/
 .preview__alignement{
     float: left;
     margin:0;
     padding:0;
 }
+
 .preview__alignementdroite{
     text-align:right;
 }
 
 .preview__titre{
-    font-family:Montserrat;
+    font-family:var(--font-body);
     font-size:var(--lyrics-h2previewbulleshomepage);
     font-weight:800px;
     margin:0px;
 }
 .preview__description{
-    font-family:Montserrat;
+    font-family:var(--font-body);
     font-size:var(--légendes);
     font-weight: 100;
     margin:0px;
-    text-decoration:none;
-
 }
