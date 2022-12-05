@@ -15,20 +15,18 @@
 }
 
 li{
-    display:inline-block;
     list-style:none;
-    display:flex;
     gap: 0;
 }
 
 /*li >p {
     padding-right: 10em;
-}
+}*/
 .preview__alignement{
     float: left;
     margin:0;
     padding:0;
-}*/
+}
 .preview__alignementdroite{
     text-align:right;
 }
@@ -44,4 +42,6 @@ li{
     font-size:var(--légendes);
     font-weight: 100;
     margin:0px;
+    text-decoration:none;
+
 }
