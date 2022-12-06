@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mind-interest</title>
     
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https:////unpkg.com/alpinejs" defer></script>    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 
 <body>
     <header class="header">
         <a class="header__logo-link" href="#">
             <img class="header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
-        <button >
-            <img src="../public/img/icons/menu.webp" alt="bouton menu">
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen">
+                <span class="menubtn__bar"></span>
         </button>
-        <nav class="header__menu menu">
+
+        <nav class="header__menu menu" x-show="menuIsOpen">
             <ul class="menu__list">
                 <li class="menu__item"> 
                     <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
