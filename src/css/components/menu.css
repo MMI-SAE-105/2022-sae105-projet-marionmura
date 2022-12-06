@@ -8,7 +8,7 @@
     right:0;
     display:flex;
     justify-content: space-between;
-    padding: 50px 100px 50px ; /*au milieu pour centrer*/
+    padding: 30px 30px 30px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
     flex-direction: column;
 }
 
@@ -16,8 +16,8 @@
     color: var(--blanc);
     text-decoration: none;
     list-style: none;
-    font-size: var(--h1-typo-menu);
-    font-family: var(--font-title);
+    font-size: 15px;
+    font-family: var(--font-body);
     display: block;
 }
 
@@ -25,7 +25,7 @@ ul.menu__list {
     list-style:none;
 }
 .menu__item{
-    line-height:2em;
+    line-height:30px;
 }
 
 .menu__h1{
