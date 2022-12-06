@@ -52,3 +52,12 @@ figcaption, .extract {
 .livre_caption{
     color:var(--gris);
 }
+
+button{
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
