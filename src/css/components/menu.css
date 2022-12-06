@@ -3,12 +3,12 @@
     background-color: var(--bleumenu);
     position: fixed;
     top: 0;
-    /*left:0;*/
+    left:0;
     bottom:0;
     right:0;
     display:flex;
     justify-content: space-between;
-    padding: 100px 30px 80px ;
+    padding: 50px 100px 50px ; /*au milieu pour centrer*/
     flex-direction: column;
 }
 
@@ -24,7 +24,17 @@
 ul.menu__list {
     list-style:none;
 }
- 
+.menu__item{
+    line-height:2em;
+}
+
+.menu__h1{
+    color:var(--blanc);
+    font-size:var(--h1-typo-menu);
+    font-weight:1;
+    text-align:center;
+}
+
 .menubtn {
     width: 2em;
     height: 3em;
