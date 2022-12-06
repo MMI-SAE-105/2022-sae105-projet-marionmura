@@ -33,6 +33,7 @@ ul.menu__list {
     font-size:var(--h1-typo-menu);
     font-weight:1;
     text-align:center;
+    margin:0;
 }
 
 .menubtn {
