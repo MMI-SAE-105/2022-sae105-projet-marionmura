@@ -2,17 +2,21 @@
     background-color:var(--blanc);
     border-radius:10px;
     box-shadow:var(--articleblur);
-    list-style:none;
     cursor:pointer;
     vertical-align:middle;
     padding-left:0em;
-    padding-right:1em;
-    padding-bottom:0.5em;
+    padding-right:0.5em;
+    padding-bottom:1.5em;
     padding-top:0.5em;
-    width:90%;
-    height:auto;
     margin:1em;
+    width:90%;
 }
+
+/*.display{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}*/
 
 .preview a{
     text-decoration:none;
@@ -35,12 +39,14 @@
     font-size:var(--lyrics-h2previewbulleshomepage);
     font-weight:800px;
     margin-top:1em;
+    
 }
 .preview__description{
     font-family:var(--font-body);
     font-size:var(--légendes);
     font-weight: 100;
     margin:2em;
+    margin-top:0em;
     padding:0;
     text-decoration: none;
 }
