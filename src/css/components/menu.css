@@ -8,10 +8,22 @@
     right:0;
     display:flex;
     justify-content: space-between;
-    padding: 50px 30px 20px ;
+    padding: 100px 30px 80px ;
     flex-direction: column;
 }
 
+.menu__link {
+    color: var(--blanc);
+    text-decoration: none;
+    list-style: none;
+    font-size: var(--h1-typo-menu);
+    font-family: var(--font-title);
+    display: block;
+}
+
+ul.menu__list {
+    list-style:none;
+}
  
 .menubtn {
     width: 2em;
