@@ -11,7 +11,20 @@
 }
 
 .header__logo{
+    display:inline-flex;
+    vertical-align:middle;
+}
+
+.header__logo-site{
     width:70%;
     height:70%;
     padding:1em;
+}
+
+.header__logo-en{
+    position:relative;
+    top:27px;
+    margin-right:4em;
+    height:40%;
+    cursor: pointer;
 }
