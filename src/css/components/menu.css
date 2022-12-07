@@ -26,6 +26,7 @@ ul.menu__list {
 }
 .menu__item{
     line-height:30px;
+    text-align:left;
 }
 
 .menu__h1{
@@ -70,5 +71,6 @@ ul.menu__list {
 
 .menu__icone{
     vertical-align:middle;
-    padding:1em;
+    padding:10px;
 }
+
