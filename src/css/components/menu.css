@@ -67,3 +67,8 @@ ul.menu__list {
 .menubtn__bar::after {
     top: 10px;
 }
+
+.menu__icone{
+    vertical-align:middle;
+    padding:1em;
+}
