@@ -21,6 +21,14 @@
     display: block;
 }
 
+.menu__icone{
+    position:absolute;
+    display:inline;
+    margin-left:-40px;
+    align-items:center;
+    padding:0;
+}
+
 ul.menu__list {
     list-style:none;
 }
@@ -69,8 +77,4 @@ ul.menu__list {
     top: 10px;
 }
 
-.menu__icone{
-    vertical-align:middle;
-    padding:10px;
-}
 
