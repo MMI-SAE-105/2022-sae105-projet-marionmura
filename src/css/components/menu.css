@@ -23,18 +23,19 @@
 
 .menu__icone{
     position:absolute;
-    display:inline;
+   /* display:inline;*/
     margin-left:-40px;
     align-items:center;
-    padding:0;
 }
 
 ul.menu__list {
     list-style:none;
+    text-align:left;
 }
 .menu__item{
-    line-height:30px;
-    text-align:left;
+    line-height:35px;
+    /*text-align:left;*/
+    vertical-align:middle;
 }
 
 .menu__h1{
