@@ -7,14 +7,20 @@ img {
 }
 
 .preview__img{
-  max-width:70%;
-  max-height:40%;
-  display:flex;
+  width: 300px;
+  height: auto;
+  flex:none;
   padding:10px;
-  margin-top:auto;
+  /*margin-top:auto;
   margin-bottom:0;
   margin-left:auto;
-  margin-right:auto;
+  margin-right:auto;*/
+}
+
+.preview__img img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;    
 }
 
 .img__article{

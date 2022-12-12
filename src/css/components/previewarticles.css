@@ -3,46 +3,54 @@
     border-radius:10px;
     box-shadow:var(--articleblur);
     cursor:pointer;
-    display:flexbox;
-    padding-left:0.5em;
     padding-right:0;
     /*padding-bottom:1.5em;*/
-    max-height:fit-content;
     margin:1em;
     min-height: fit-content;
-    /*width:90%;*/
+    width:90vw;
 }
 
 .preview a{
     text-decoration:none;
 }
 
+.wrap_card{
+    display:flex;
+}
+
 .preview__alignement{
-    float: left;
+    /*float: left;*/
     margin:0;
     padding:0;
 }
 
 .preview__alignementdroite{
-    text-align:right;
-    padding:10;
+    text-align:end;
+    padding:10px;
     margin:0;
 }
 
+.preview__text-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding:10px;
+}
+
 .preview__titre{
+    
     font-family:var(--font-body);
     font-size:var(--lyrics-h2previewbulleshomepage);
     font-weight:800px;
-    padding-top:1em;
-    margin-bottom:0;
-    
+    padding-top:10px;
+    /*margin-bottom:0;  */  
 }
 .preview__description{
     font-family:var(--font-body);
     font-size:var(--légendes);
     font-weight: 100;
-    margin-bottom:10px; 
+    /*margin-bottom:10px; 
     margin-top:1em;
-    padding:1em;
+    padding:1em;*/
     text-decoration: none;
 }
