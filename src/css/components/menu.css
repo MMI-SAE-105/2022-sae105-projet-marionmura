@@ -8,7 +8,7 @@
     right:0;
     display:flex;
     justify-content: space-between;
-    padding: 30px 30px 30px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
+    padding: 30px 20px 30px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
     flex-direction: column;
 }
 
@@ -23,19 +23,31 @@
 
 .menu__icone{
     position:absolute;
-   /* display:inline;*/
+    margin-top:10px;
     margin-left:-40px;
-    align-items:center;
+    vertical-align:middle;
+    width:20px;
+}
+
+.menu__icone2{
+    width:20px;
+}
+
+.menu_4{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 3rem;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 ul.menu__list {
     list-style:none;
-    text-align:left;
 }
+
 .menu__item{
-    line-height:35px;
-    /*text-align:left;*/
-    vertical-align:middle;
+    line-height:40px;
+    
 }
 
 .menu__h1{
