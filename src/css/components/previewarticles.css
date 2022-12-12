@@ -5,9 +5,10 @@
     cursor:pointer;
     padding-left:0em;
     padding-right:0.5em;
-    padding-bottom:1.5em;
+    /*padding-bottom:1.5em;*/
     padding-top:0.5em;
     margin:1em;
+    min-height: fit-content;
     /*width:90%;*/
 }
 
