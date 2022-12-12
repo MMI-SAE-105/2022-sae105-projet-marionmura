@@ -3,6 +3,7 @@
     border-radius:10px;
     box-shadow:var(--articleblur);
     cursor:pointer;
+    display:flexbox;
     padding-left:0.5em;
     padding-right:0;
     /*padding-bottom:1.5em;*/
