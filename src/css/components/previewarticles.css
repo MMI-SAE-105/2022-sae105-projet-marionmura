@@ -3,7 +3,7 @@
     border-radius:10px;
     box-shadow:var(--articleblur);
     cursor:pointer;
-    padding-left:0em;
+    padding-left:0.5em;
     padding-right:0;
     /*padding-bottom:1.5em;*/
     max-height:fit-content;
@@ -41,7 +41,7 @@
     font-size:var(--légendes);
     font-weight: 100;
     margin-bottom:10px; 
-    margin-top:0em;
+    margin-top:1em;
     padding:1em;
     text-decoration: none;
 }
