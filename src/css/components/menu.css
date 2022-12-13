@@ -8,7 +8,7 @@
     right:0;
     display:flex;
     justify-content: space-between;
-    padding: 30px 20px 30px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
+    padding: 30px 20px 150px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
     flex-direction: column;
 }
 
@@ -16,8 +16,8 @@
     color: var(--blanc);
     text-decoration: none;
     list-style: none;
-    font-size: 15px;
     font-family: var(--font-body);
+    font-size: var(--titre--mention-légale-typo);
     display: block;
 }
 
@@ -30,12 +30,15 @@
 }
 
 .menu__icone2{
-    width:20px;
+    width:30px;
+    /*display:flex;
+    justify-content: space-between;*/
 }
 
 .menu_4{
     display:flex;
     flex-wrap:wrap;
+   /* align-items: flex-end;*/
     gap: 3rem;
     margin-right:auto;
     margin-left:auto;
@@ -46,9 +49,9 @@ ul.menu__list {
 }
 
 .menu__item{
-    line-height:40px;
-    
+    line-height:40px;  
 }
+
 
 .menu__h1{
     color:var(--blanc);

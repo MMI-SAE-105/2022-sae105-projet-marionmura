@@ -16,7 +16,7 @@
 
 .preview__wrap-card{
     display:flex;
-    gap:10px;
+    /*gap:10px;*/
     /*margin:10px;*/
 }
 
@@ -47,7 +47,7 @@
     font-family:var(--font-body);
     font-size:var(--lyrics-h2previewbulleshomepage);
     font-weight:800px;
-    padding:0px;
+    padding-right:20px;
     /*margin-bottom:0;  */  
 }
 .preview__description{
@@ -57,6 +57,6 @@
     /*margin-bottom:10px; */
     margin-top:0;
     padding:0;
-    padding-right:10px;
+    padding-right:20px;
     text-decoration: none;
 }
