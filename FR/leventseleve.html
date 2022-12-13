@@ -19,48 +19,53 @@
         <a class="header__logo-link" href="index.html">
             <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
         <a class="header__EN" href="../EN/index.html">
-            <img class="header__logo-en header__logo" src="../public/img/icones_svg/ENicone.svg" alt="icone EN">
+            <img class="header__logo-en header__logo" src="../public/img/icons/ENicone.svg" alt="icone EN">
         </a>
         <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen">
                 <span class="menubtn__bar"></span>
         </button>
 
         <nav class="header__menu menu" x-show="menuIsOpen">
+            <h1 class="menu__h1">Menu</h1>
             <ul class="menu__list">
                 <li class="menu__item"> 
-                    <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
+                    <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >Le Vent se lève</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="filmographie.html">Myazaki et sa filmographie</a>
+                    <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >Myazaki et sa filmographie</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="headup.html">Head Up - The Score</a>
+                    <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >Head Up - The Score</a>
                 </li>
                 <li class="menu__item"> 
-                    <a class="menu__link" href="cartographie.html">Cartographie d'un univers</a>
+                    <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >Cartographie d'un univers</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="nottingham.html">Nottingham</a>
+                    <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >Nottingham</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="sionvoyageait.html">Et si on voyageait ?</a>
+                    <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >Et si on voyageait ?</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="ressourcesterrestres.html">Ressources et déclin</a>
+                    <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >Ressources et déclin</a>
                 </li>
             </ul>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="glossaire.html">Glossaire</a>  
-                </li class="menu__item">
-                <li>
+            <ul class="menu__list menu_4">
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="glossaire.html">Glossaire</a>
+                    <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone">  
+                </li>
+                <li class="menu__item-dessous">
                     <a class="menu__link" href="contacts.html">Contacts</a>
+                    <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone">
                 </li>
-                <li class="menu__item">
+                <li class="menu__item-dessous">
                     <a class="menu__link" href="autresprojets.html">Autres projets</a>
+                    <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone">
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="apropos.html">À popos</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="apropos.html">À propos</a>
+                    <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone">
                 </li>
             </ul>
         </nav>
