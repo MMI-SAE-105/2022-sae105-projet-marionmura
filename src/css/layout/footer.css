@@ -13,8 +13,14 @@ footer{
     text-align: center;
 }
 
-.footer__h2, .footer__p, .footer__a{
+.footer__p--block{
+    padding:0;
+    text-align:center;
+}
+
+.footer__h2, .footer__p, .footer__a, .footer__p--block{
     color:var(--blanc);
+    margin:0;
 }
 
 .footer__container{
