@@ -7,8 +7,8 @@ footer{
 .footer__h2{
     color:var(--blanc);
     display:block;
-
 }
+
 .footer__p{
     text-align: center;
 }
@@ -19,7 +19,7 @@ footer{
 }
 
 .footer__h2, .footer__p, .footer__a, .footer__p--block{
-    color:var(--blanc);
+    color:var(--bleubackground);
     margin:0;
 }
 
@@ -29,14 +29,21 @@ footer{
     margin:0px 15px;
     align-items: center;
 }
+.footer_border{
+    border-bottom: 2px solid var(--bleubackground);
+    margin:15px;
+}
+
 .footer__btn{
-    border:2px solid var(--blanc);
+    border:2px solid var(--bleubackground);
     border-radius: 4px;
     text-decoration: none;
-    color:var(--blanc);
+    color:var(--bleubackground);
+    font-family: var(--font-body);
+    font-size:var(--légendes);
     padding:5px;
     margin-bottom:15px;
-    cursor:pointer;
+    cursor:pointer; 
 }
 
 .footer__logo--a{
