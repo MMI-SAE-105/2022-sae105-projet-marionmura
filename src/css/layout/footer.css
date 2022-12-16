@@ -27,17 +27,25 @@ footer{
 .footer__logo--a{
     margin:0;
     padding:0;
-
 }
 
 .footer__logo{
-    width:70px;
+    width:60px;
     height:auto;
     position:relative;
-    /*display:inline-flex;*/
 }
 
-.footer__logopetit{
+.footer__logo--mmi{
+    width:50px;
+    height:auto;
+}
+
+.footer__logo--github{
     width:40px;
+    height:auto;
+}
+
+.footer__logo--figma{
+    width:30px;
     height:auto;
 }
