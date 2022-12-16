@@ -1,7 +1,7 @@
 footer{
     background-color:var(--bleufooter);
-    padding:2em;
-    margin-top:2rem;
+    padding:1em;
+    margin-top:1rem;
 }
 
 .footer__h2{
@@ -17,11 +17,27 @@ footer{
     color:var(--blanc);
 }
 
+.footer__container{
+    display:flex;
+    justify-content:space-between; 
+    margin:0px 15px;
+    align-items: center;
+}
+
+.footer__logo--a{
+    margin:0;
+    padding:0;
+
+}
+
 .footer__logo{
-    width:20%;
-    height:20%;
-    margin:auto;
-    padding-left:4rem;
-    vertical-align: middle;
-    display:inline-flex;
+    width:70px;
+    height:auto;
+    position:relative;
+    /*display:inline-flex;*/
+}
+
+.footer__logopetit{
+    width:40px;
+    height:auto;
 }
