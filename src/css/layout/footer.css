@@ -29,6 +29,15 @@ footer{
     margin:0px 15px;
     align-items: center;
 }
+.footer__btn{
+    border:2px solid var(--blanc);
+    border-radius: 4px;
+    text-decoration: none;
+    color:var(--blanc);
+    padding:5px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
 
 .footer__logo--a{
     margin:0;
