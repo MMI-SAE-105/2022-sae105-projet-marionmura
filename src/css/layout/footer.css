@@ -30,7 +30,7 @@ footer{
     align-items: center;
 }
 .footer_border{
-    border-bottom: 2px solid var(--bleubackground);
+    /*border-bottom: 2px solid var(--bleubackground);*/
     margin:15px;
 }
 
