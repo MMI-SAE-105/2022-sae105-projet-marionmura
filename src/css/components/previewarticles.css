@@ -43,7 +43,8 @@
 }
 
 .preview__titre{
-    
+    padding-top:5px;
+    margin-bottom:5px;
     font-family:var(--font-body);
     font-size:var(--lyrics-h2previewbulleshomepage);
     font-weight:800px;
