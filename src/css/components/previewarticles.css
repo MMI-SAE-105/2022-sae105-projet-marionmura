@@ -12,6 +12,7 @@
 
 .preview a{
     text-decoration:none;
+    color:var(--bleufooter);
 }
 
 .preview__wrap-card{
