@@ -24,6 +24,7 @@
     width:30px;
     height:auto;
     margin:10px auto;
+    position:calc(50%)
 }
 
 .cards__p{

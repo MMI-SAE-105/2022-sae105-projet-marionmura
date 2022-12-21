@@ -37,9 +37,9 @@ footer{
 }
 
 .footer__btn{
-    border:2px solid var(--bleubackground);
-    border-radius: 4px;
-    text-decoration: none;
+    /*border:2px solid var(--bleubackground);
+    border-radius: 4px;*/
+    text-decoration: underline;
     color:var(--bleubackground);
     font-family: var(--font-body);
     font-size:var(--légendes);
