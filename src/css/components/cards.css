@@ -1,0 +1,23 @@
+.cards{
+    background-color: var(--blanc);
+    border-radius:5px;
+    box-shadow:var(--articleblur);
+    cursor:pointer;
+    width:150px;
+    height:150px;
+    margin:15px auto;
+}
+
+.cards__a{
+    text-decoration: none;
+    color:var(--noir);
+    padding:5px;
+
+}
+
+.cards__container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    align-items: center;
+}

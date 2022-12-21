@@ -18,4 +18,5 @@
 /*règles de composition*/
 /*composants*/
 @import "components/menu.css";
-@import "components/previewarticles.css"
+@import "components/previewarticles.css";
+@import "components/cards.css";
