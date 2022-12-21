@@ -11,7 +11,7 @@
 .cards__a{
     text-decoration: none;
     color:var(--noir);
-    padding:5px;
+    padding:0;
 
 }
 
@@ -20,4 +20,15 @@
     flex-wrap:wrap;
     gap:15px;
     align-items: center;
+}
+
+.cards__icon{
+    width:30px;
+    height:auto;
+    margin:10px auto;
+}
+
+.cards__p{
+    margin:0;
+    padding:0 16px;
 }
