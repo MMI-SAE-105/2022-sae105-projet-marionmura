@@ -37,7 +37,7 @@
 .header__body--titre{
     display:flex;
     justify-content:space-between; 
-    margin:0 2%;
+    margin:0 15px;
     align-items: center;
 }
 
@@ -47,4 +47,14 @@
     height: 5px;
     width: 25%;
     border-radius:4px;
+    
+}
+
+.header__barre{
+    content: '';
+    background-color: var(--bleufooter);
+    height: 5px;
+    width:92%;
+    border-radius:4px;
+    position:absolute;
 }

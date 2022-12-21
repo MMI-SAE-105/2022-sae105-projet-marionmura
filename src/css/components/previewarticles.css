@@ -5,9 +5,9 @@
     cursor:pointer;
     padding-right:0;
     /*padding-bottom:1.5em;*/
-    margin:1em;
+    margin:15px;
     min-height: fit-content;
-    width:90vw;
+    /*width:90vw;*/
 }
 
 .preview a{

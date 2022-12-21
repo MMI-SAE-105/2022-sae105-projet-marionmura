@@ -24,11 +24,17 @@ img {
   width: 100%;    
 }
 
+.img__article--index{
+  width: 92%;
+  position:relative;
+  display:block;
+  margin:4% 4%;
+}
+
 .img__article{
   width: 92%;
   position:relative;
   display:block;
   padding-top:1rem;
-  margin-left:4%;
-  margin-right:4%;
+  margin:4% 4%;
 }

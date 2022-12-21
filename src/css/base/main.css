@@ -8,7 +8,7 @@ body{
     border-radius:5px;
     box-shadow:var(--articleblur);
     width:auto;
-    margin:2%;
+    margin:15px; /*2% avant*/
     padding-bottom: 1rem;;
 }
 
