@@ -10,9 +10,7 @@
 
 .cards__a{
     text-decoration: none;
-    color:var(--noir);
     padding:0;
-
 }
 
 .cards__container{
@@ -29,6 +27,7 @@
 }
 
 .cards__p{
+    color:var(--bleufooter);
     margin:0;
     padding:0 16px;
 }
