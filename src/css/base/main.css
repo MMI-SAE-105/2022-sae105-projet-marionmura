@@ -12,6 +12,16 @@ body{
     padding-bottom: 1rem;;
 }
 
+.icones__container{
+    display:flex;
+    justify-content:space-between; 
+    margin:0 20%;
+    align-items: center;
+}
+.icones{
+    width:50px;
+}
+
 /*header body et titres */
 
 
@@ -26,7 +36,7 @@ h1{
     font-family: var(--font-title);
     font-size:var(--h1--titres-articles);
     letter-spacing: 1,5px;
-    padding:1rem;
+    padding: 10px 1rem;
 }
 
 
@@ -35,6 +45,10 @@ h2{
     font-weight:900;
     font-size:var(--h2-articles);
     color:var(--gris);
+    padding:0 1rem;
+}
+
+.footer__2{
     padding:1rem;
 }
 

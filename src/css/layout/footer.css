@@ -1,7 +1,7 @@
 footer{
     background-color:var(--bleufooter);
     padding:1em;
-    margin-top:1rem;
+    margin-top:16px;
 }
 
 .footer__h2{
@@ -11,16 +11,17 @@ footer{
 
 .footer__p{
     text-align: center;
+    margin:0;
 }
 
 .footer__p--block{
     padding:0;
     text-align:center;
+    margin:0;
 }
 
 .footer__h2, .footer__p, .footer__a, .footer__p--block{
     color:var(--bleubackground);
-    margin:0;
 }
 
 .footer__container{
@@ -32,6 +33,7 @@ footer{
 .footer_border{
     /*border-bottom: 2px solid var(--bleubackground);*/
     margin:15px;
+    margin-top:25px;
 }
 
 .footer__btn{

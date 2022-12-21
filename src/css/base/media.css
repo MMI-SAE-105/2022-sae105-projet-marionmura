@@ -15,11 +15,9 @@ img {
   /*margin-top:auto;
   margin-bottom:0;*/
   margin:20px;;
-
 }
 
 .preview__img img{
-
   height: 100%;
   width: 100%;    
 }
@@ -37,4 +35,10 @@ img {
   display:block;
   padding-top:1rem;
   margin:4% 4%;
+}
+
+.img__profil{
+  width:200px;
+  margin: auto;
+  padding-top:15px;
 }
