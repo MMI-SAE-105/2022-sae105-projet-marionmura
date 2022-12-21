@@ -28,3 +28,23 @@
     height:40%;
     cursor: pointer;
 }
+
+.header__titre{
+    padding:0;
+    margin:0;
+}
+
+.header__body--titre{
+    display:flex;
+    justify-content:space-between; 
+    margin:0px 15px;
+    align-items: center;
+}
+
+.header_titre--barre{
+    content: '';
+    background-color: var(--bleufooter);
+    height: 5px;
+    width: 25%;
+    border-radius:4px;
+}

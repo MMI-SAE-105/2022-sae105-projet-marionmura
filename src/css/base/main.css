@@ -8,10 +8,12 @@ body{
     border-radius:5px;
     box-shadow:var(--articleblur);
     width:auto;
-    margin-left: 2%;
-    margin-right:2%;
+    margin:2%;
     padding-bottom: 1rem;;
 }
+
+/*header body et titres */
+
 
 .header__titre, .section__avoirplus{
     font-family: var(--font-title);
@@ -27,6 +29,7 @@ h1{
     padding:1rem;
 }
 
+
 h2{
     font-family: var(--font-body);
     font-weight:900;
@@ -34,6 +37,13 @@ h2{
     color:var(--gris);
     padding:1rem;
 }
+
+h2.section__avoirplus{
+    margin:15px 0;
+    padding:0;
+}
+
+/*Body p et textes*/
 
 p{
     font-family:var(--font-body);
