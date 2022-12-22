@@ -82,7 +82,7 @@
                     Voici un grand nombre de ses réalisations sur cette page.
             </p>
 
-            <ul class="film__container" x-data="{imgaffichee:'../public/img/img/pagefilmographie/filmo$.webp',}">
+            <ul class="film__container" x-data="{imgaffichee:false}">
                 <li class="film__classe">
                     <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo2.webp" alt="1979 Le Château de Cagliostro" 
                     @click="imgaffichee='../public/img/img/pagefilmographie/filmo2.webp'">
@@ -133,9 +133,9 @@
                     <p class="p__miniature">2014 Souvenirs de Marnie</p>
                 </li>
             </ul>
-            <div class="overlay" x-show="imgaffichee" @click="imgaffichee=null">
+            <!--<div class="overlay" x-show="imgaffichee" @click="imgaffichee = !imgaffichee">
                 <figure><img :src="imgaffichee" alt="image galerie test"></figure>
-            </div>
+            </div>-->
         </section>
 
         <section>

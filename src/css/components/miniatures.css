@@ -5,7 +5,7 @@ ul li {
 }
 
 .film__container{
-    display:flex;
+   display:flex;
     flex-wrap: wrap;
     gap:20px;
     align-items:flex-start;/*pb alignement */
@@ -27,12 +27,6 @@ ul li {
 .overlay {
     /* Sit on top of the page content */
     position:absolute;
-    /* Full width (cover the whole page) */
-    /*width:100wh;*/
-   
-    /* Full height (cover the whole page) */
-    /*height:100wh;*/
-    
     /* Stay at the top */
     top:0; /*image placée entre top et bottom*/
     /* Stay at the left */
@@ -43,6 +37,7 @@ ul li {
     bottom:0;
     /* Black background with opacity */
     background-color:var(--bleufooter);
+    opacity:0.5;
     /* Add a pointer on hover */
     cursor:pointer;
     /* Use a grid for easy centering */
@@ -74,17 +69,13 @@ img{
     /* Position absolute */
     position:absolute;
     /* 1rem from the top */
-    top:1rem;
+    top:10rem;
     /* 1rem from the right */
     right:1rem;
     /* 2rem width */
     width:2rem;
     /* 2rem height */
     height:2rem;
-    /* White border of 2px */
-    border:2px solid #fff;
-    /* Rounded border */
-    border-radius: 50%;
 }
 
 .overlay> figure {
