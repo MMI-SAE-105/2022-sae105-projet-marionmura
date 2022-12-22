@@ -1,0 +1,104 @@
+/*page film*/
+
+ul li {
+    list-style: none;
+}
+
+.film__container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items:flex-start;/*pb alignement */
+    margin:0 5px;
+    padding:0;
+}
+.film__classe{
+    width:85px;
+    height:auto;
+    margin:0 auto;
+    cursor:pointer;
+}
+
+.p__miniature{
+    padding:0;
+}
+
+/**/
+.overlay {
+    /* Sit on top of the page content */
+    position:absolute;
+    /* Full width (cover the whole page) */
+    /*width:100wh;*/
+   
+    /* Full height (cover the whole page) */
+    /*height:100wh;*/
+    
+    /* Stay at the top */
+    top:0; /*image placée entre top et bottom*/
+    /* Stay at the left */
+    left:0;
+    /* Stay at the right */
+    right:0;
+    /* Stay at the bottom */
+    bottom:0;
+    /* Black background with opacity */
+    background-color:var(--bleufooter);
+    /* Add a pointer on hover */
+    cursor:pointer;
+    /* Use a grid for easy centering */
+    display:grid;
+    /* Center vertically and horizontally */
+    place-content:center;
+    align-items:center;
+}
+
+img{
+    max-width:100%;
+}
+
+.overlay::after {
+    /* Add content : "X" */
+    content:"X";
+    /* White text color */
+    color:rgba(255,255,255);
+    /* Black background color */
+    background-color:rgba(0,0,0,0);
+    /* Font family "sans-serif" */
+    font-family:sans-serif;
+    /* Centered text */
+    text-align:center;
+    /* Line height ( idem height ) */
+    line-height:2px;
+    /* Display as a block */
+    display:block;
+    /* Position absolute */
+    position:absolute;
+    /* 1rem from the top */
+    top:1rem;
+    /* 1rem from the right */
+    right:1rem;
+    /* 2rem width */
+    width:2rem;
+    /* 2rem height */
+    height:2rem;
+    /* White border of 2px */
+    border:2px solid #fff;
+    /* Rounded border */
+    border-radius: 50%;
+}
+
+.overlay> figure {
+    /* No margin */
+    margin:0;
+    /* 1rem padding */
+    padding:1rem;
+    /* White border of 2px */
+    border: 2px solid #fff;
+}
+
+.overlay>figure>img {
+    /* Max width 100% for responsive image */
+    max-width:100%;
+    /* Height auto for keeping the ratio */
+    height:auto;
+}
