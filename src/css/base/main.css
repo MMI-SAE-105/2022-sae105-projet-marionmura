@@ -102,7 +102,7 @@ ul li {
 .film__classe{
     width:85px;
     height:auto;
-    margin:auto;
+    margin:0 auto;
     cursor:pointer;
 }
 
