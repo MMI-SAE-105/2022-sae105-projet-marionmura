@@ -85,27 +85,3 @@ button{
   padding: 0;
   cursor: pointer;
 }
-/*page film*/
-
-ul li {
-    list-style: none;
-}
-
-.film__container{
-    display:flex;
-    flex-wrap: wrap;
-    gap:20px;
-    align-items:flex-start;/*pb alignement */
-    margin:0 5px;
-    padding:0;
-}
-.film__classe{
-    width:85px;
-    height:auto;
-    margin:0 auto;
-    cursor:pointer;
-}
-
-.p__miniature{
-    padding:0;
-}
