@@ -6,6 +6,7 @@ img {
   display:flex;
 }
 
+/* cards de la page index*/
 .preview__img{
   width: 100px;
   height: 100px;
@@ -37,8 +38,16 @@ img {
   margin:4% 4%;
 }
 
+/*page à propos*/
+
 .img__profil{
   width:200px;
   margin: auto;
   padding-top:15px;
+}
+
+/*img de la filmographie*/
+.img__miniature{
+  width:100%;
+  height:auto;
 }
