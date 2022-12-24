@@ -3,14 +3,6 @@ body{
     margin-top:7em;
 }
 
-.bulle{
-    background-color:var(--blanc);
-    border-radius:5px;
-    box-shadow:var(--articleblur);
-    width:auto;
-    margin:15px; /*2% avant*/
-    padding-bottom: 1rem;;
-}
 
 .icones__container{
     display:flex;
