@@ -1,0 +1,20 @@
+.bulle{
+    background-color:var(--blanc);
+    border-radius:5px;
+    box-shadow:var(--articleblur);
+    width:auto;
+    margin:15px; /*2% avant*/
+    padding-bottom: 1rem;;
+}
+
+.bulle__dotted{
+    border:2px dashed  var(--gris);
+    border-radius:5px;
+    padding:5px;
+    margin:0 15px;
+}
+
+.h2__dotted{
+    padding:5px 16px;
+    margin:0;
+}

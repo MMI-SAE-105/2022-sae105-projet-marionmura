@@ -10,6 +10,7 @@
 /*règles de base*/
 @import "base/main.css";
 @import "base/media.css";
+@import "base/bulles.css";
 
 /*Layout */
 @import "layout/header.css";
