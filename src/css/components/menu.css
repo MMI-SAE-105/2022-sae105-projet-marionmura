@@ -32,10 +32,10 @@
 .menu_4{
     display:flex;
     flex-wrap:wrap;
-   /* align-items: flex-end;*/
     gap: 1rem 2rem;
-    margin-right:auto;
-    margin-left:auto;
+    margin-top:5% ;
+    margin-left:15%;
+    padding:0;
 }
 
 .menu__item-dessous{
