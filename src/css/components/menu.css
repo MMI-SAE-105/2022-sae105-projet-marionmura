@@ -10,7 +10,7 @@
     justify-content: space-between;
     padding: 30px 20px 150px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
     flex-direction: column;
-    transition: all .5s cubic-bezier(0.45, 0.79, 0.72, 0.89);
+    /*transition: all .5s cubic-bezier(0.45, 0.79, 0.72, 0.89);*/
 }
 
 .menu__link {
