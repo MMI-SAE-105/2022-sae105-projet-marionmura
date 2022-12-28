@@ -10,6 +10,7 @@
     justify-content: space-between;
     padding: 30px 20px 150px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
     flex-direction: column;
+    transition: all .5s cubic-bezier(0.45, 0.79, 0.72, 0.89);
 }
 
 .menu__link {
@@ -33,7 +34,7 @@
     display:flex;
     flex-wrap:wrap;
     gap: 1rem 2rem;
-    margin-top:15% ;
+    margin-top:10% ;
     margin-left:15%;
     padding:0;
 }
@@ -99,10 +100,11 @@ ul.menu__list {
     height: 4px;
     width: 100%;
     border-radius:4px;
+    display: block;
     position: absolute;
     left: 0;
     z-index: 2;
-    transition: all .4s ease-in-out;
+    transition: all .5s;
 }
   
 .menubtn__bar::before {
