@@ -1,0 +1,35 @@
+.img__legende--container{
+    display:flex;
+    align-items: center;
+}
+
+.frise__alignement{
+    flex:none;
+}
+
+.frise__img{
+    width:200px;
+    margin:15px;
+}
+
+.frise__figure-l, .frise__figure-r{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin:0;
+}
+
+.frise__figure-l{
+    padding-left:15px;
+}
+.frise__figure-r{
+    padding-right:15px;
+}
+
+.frise__legende{
+    font-family: var(--font-title);
+    color:var(--noir);
+    font-size: var(--typo-legendefrise);
+    padding:0;
+    margin:0;
+}
