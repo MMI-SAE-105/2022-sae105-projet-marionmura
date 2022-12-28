@@ -103,7 +103,6 @@ ul.menu__list {
     left: 0;
     z-index: 2;
     transition: all .4s ease-in-out;
-
 }
   
 .menubtn__bar::before {
@@ -114,4 +113,14 @@ ul.menu__list {
     top: 10px;
 }
 
+/*animation en X pour fermer le menu*/
+.menubtn--open .menubtn__bar,
+.menubtn--open .menubtn__bar::before,
+.menubtn--open .menubtn__bar::after {
+    transform: rotate(135deg);
+}
+.menubtn--open .mennubtn__bar, .menubtn--open .menubtn__bar::before, .menubtn--open .menubtn__bar::after{
+    transform:rotate(90deg);
+    top:0;
+}
 
