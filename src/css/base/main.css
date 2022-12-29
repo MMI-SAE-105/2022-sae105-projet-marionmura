@@ -63,10 +63,43 @@ figcaption, .extract {
     font-family:var(--font-body);
     font-size:var(--légendes);
     color:var(--gris);
+    text-align: center;
 }
 
 .livre_caption{
     color:var(--gris);
+}
+
+
+.paroles{
+    color:var(--gris);
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:1em;
+    font-style: italic;
+    text-align:center;
+    line-height: 25px;
+}
+
+.paroles p{
+    padding:0;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.parole1::before, .parole2::after{
+    font-family:var(--guillemets);
+    font-weight: bold;
+    font-style:normal;
+    font-size:25px;
+}
+
+.parole1::before{
+    content:"“";
+}
+
+.parole2::after{
+    content:"”";
 }
 
 button{
