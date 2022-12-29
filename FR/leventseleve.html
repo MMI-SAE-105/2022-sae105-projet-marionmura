@@ -8,10 +8,7 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 
     <link rel="stylesheet" href="../src/css/style.css">
-    <link href="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.css" 
-    rel="stylesheet">
-    <script src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js" 
-    type="text/javascript"></script>
+    
 
 </head>
 <body>
@@ -103,9 +100,8 @@
             <p>Le film rend hommage à un ingénieur en aéronautique Jiro Horikoshi.</p>
             <p>Il a conçu les bombardiers Mitsubishi A6M et A5M, aussi appelés le chasseur Zero et Claude dans le long métrage</p>
         
-            <!--<video width=auto height=100% id="example-player" controls muted  class="cld-video-player
-            cld-video-player-skin-dark"> </video>-->
-
+            
+            <video controls src="https://medias.marionmura.fr/leventseleve_video.mp4"></video>
         
             <h2>Synopsis du film</h2>
             <p>Le film commence quand Jirô est enfant. Il veut devenir pilote mais étant moype il ne le pourra jamais. Il se concentre alors sur l’aéronautique toute sa vie.</p>
@@ -214,11 +210,5 @@
         </div>
     </footer>
 
-    <!--<script>
-        var cld = cloudinary.videoPlayer('example-player', {
-            cloud_name: 'dgokpvu2', //remplacer par votre id cloudinary 
-            sourceTypes: ['hls','dash','webm/vp9','mp4/h265','mp4']}); 
-        cld.source('https://res.cloudinary.com/dgfokpvu2/video/upload/v1669888657/video/leventseleve.mp4'); //à remplacer après avoir uploader une vidéo
-    </script>-->
 </body>
 </html>
