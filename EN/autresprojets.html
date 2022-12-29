@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres projets</title>
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a class="header__logo-link" href="index.html">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
+        <a class="header__EN" href="../FR/autresprojets.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/FRicone.svg" alt="icone FR">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" x-show="menuIsOpen">
+            <h1 class="menu__h1">Menu</h1>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+            
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        The wind rises</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        Myazaki and his Filmography </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >
+                        Head Up - The Score</a>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >
+                        Cartography of a universe</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >
+                        Nottingham</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >
+                        And if we travel a little ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >
+                        Resources and decline</a>
+                </li>
+            </ul>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+
+            <ul class="menu__list menu_4">
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="glossaire.html">Glossary
+                    <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="contacts.html">Contacts
+                    <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="autresprojets.html">Other projects
+                    <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="apropos.html">About me
+                    <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div class="header__body--titre">
+            <span class="header_titre--barre"></span>
+            <h1 class="header__titre">Other projects</h1>
+            <span class="header_titre--barre"></span>
+        </div>
+
+        <section class="bulle">
+            <h2 class="h2__dotted">Section with the other projects</h2>
+            <p class="bulle__dotted">In this section you can find the other projects from the group MMi 1, take a look on them !
+            </p>
+        </section>
+
+        <div class="header__body--titre">
+            <span class="header__barre"></span>
+        </div>
+
+        <section class="cards__container">
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>To an utopian world ?</h2>
+                    <p class="cards__p">Alban Luc</p>
+                    <img class="cards__icon" src="../public/img/icons/astronaut.svg" alt="usericon">
+                </a>
+            </div>
+
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>What will the world be like ?</h2>
+                    <p class="cards__p">Arilès Messaoudi</p>
+                    <img class="cards__icon" src="../public/img/icons/kiwi.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>What is was to be eighteen</h2>
+                    <p class="cards__p">Romane Miguel</p>
+                    <img class="cards__icon" src="../public/img/icons/feuille.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Tik Tak</h2>
+                    <p class="cards__p">Camilia Mokdad</p>
+                    <img class="cards__icon" src="../public/img/icons/puzzle.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Denonciation of the current world</h2>
+                    <p class="cards__p">Sofiane Mouadeb</p>
+                    <img class="cards__icon" src="../public/img/icons/otter.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>What have we become ?</h2>
+                    <p class="cards__p">Evan Moulin</p>
+                    <img class="cards__icon" src="../public/img/icons/dragon.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Time Loop</h2>
+                    <p class="cards__p">Marie-Claire Naze</p>
+                    <img class="cards__icon" src="../public/img/icons/astronaut.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Kairos</h2>
+                    <p class="cards__p">Marwa Nezzar</p>
+                    <img class="cards__icon" src="../public/img/icons/kiwi.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Korean Notes</h2>
+                    <p class="cards__p">Léopold Ohnimus</p>
+                    <img class="cards__icon" src="../public/img/icons/feuille.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards"> 
+                <a class="cards__a" href="">
+                    <h2>FF all time</h2>
+                    <p class="cards__p">Yassir Ouadghiri</p>
+                    <img class="cards__icon" src="../public/img/icons/puzzle.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Continuous Evolution</h2>
+                    <p class="cards__p">Yann Pernette</p>
+                    <img class="cards__icon" src="../public/img/icons/otter.svg" alt="usericon">
+                </a>
+            </div>
+            <div class="cards">
+                <a class="cards__a" href="">
+                    <h2>Last Time</h2>
+                    <p class="cards__p">Thomas Poupon</p>
+                    <img class="cards__icon" src="../public/img/icons/dragon.svg" alt="usericon">
+                </a>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <h2 class="footer__h2">LEGAL MENTION</h2>
+        <p class="footer__p">A project realised in a exercise for the <a class="footer__a" href="http://mmimontbeliard.com/">MMi département of Montbéliard</a></p>
+        <p class="footer__p--block">Marion Mura</p>
+        <p class="footer__p--block">MMi 1 group B2</p>
+        <p class="footer__p--block"><a class="footer__a" href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a></p>
+        
+        <div class="footer__container footer_border">
+            <a class="footer__btn" href="contacts.html">Contact</a>
+            <a class="footer__btn" href="apropos.html">About me</a>
+            <a class="footer__btn" href="autresprojets.html">Other projects</a>
+        </div>
+        <div class="footer__container">
+            <a class="footer__logo--a" href="/FR/apropos.html">
+                <img  class="footer__logo" src="../public/img/icons/logov2.webp" alt="logo pour en savoir plusretour à la page d'accueil">
+            </a>
+            <a class="footer__logo--a" href="http://mmimontbeliard.com/">
+                <img class="footer__logo--mmi" src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
+            </a>
+            <a class="footer__logo--a" href="https://github.com/MMI-SAE-105/2022-sae105-projet-marionmura">
+                <img class="footer__logo--github" src="../public/img/icons/github.svg" alt="logo projet github">
+            </a>
+            <a class="footer__logo--a" href="https://www.figma.com/proto/ZEwCbbJKhCPRFDCW9Aj3ut/Maquettes-projet-individuel-%E2%80%94-Marion-MURA?node-id=1346%3A3274&scaling=scale-down&page-id=1346%3A2817&starting-point-node-id=1346%3A3274&show-proto-sidebar=1">
+                <img class="footer__logo--figma" src="../public/img/icons/figma.svg" alt="logo projet figma">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
