@@ -80,7 +80,11 @@
 }
 
 .plane__frise2{
-
+    width:113px;
+    aspect-ratio:113/194;
+    position:absolute;
+    margin:60px 35%;
+    background-image: url("data:image/svg+xml,%3Csvg width='113' height='194' viewBox='0 0 113 194' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80.2289 49.4386L10.1519 70.9905M80.2289 49.4386L83.1665 43.2407C83.8959 41.7017 82.4908 40.0135 80.845 40.4513L75.0884 41.9828M80.2289 49.4386L75.0884 41.9828M80.2289 49.4386L79.2866 66.5516C79.2298 67.5827 78.3974 68.401 77.3654 68.4402L10.1519 70.9905M10.1519 70.9905L65.4617 32.027C66.3573 31.3961 67.5938 31.6031 68.235 32.4912L75.0884 41.9828' stroke='black' stroke-width='4'/%3E%3C/svg%3E ");
 }
 
 .plane__frise3{
