@@ -11,143 +11,192 @@
 
 </head>
 <body>
-    <header class="header">
-        <a class="header__logo-link" href="index.html">
-            <img class="header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
-        <button >
-            <img src="../public/img/icons/menu.webp" alt="bouton menu">
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a class="header__logo-link" href="#">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
+        <a class="header__EN" href="../FR/headup.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/FRicone.svg" alt="icone FR">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
         </button>
-        <nav class="header__menu menu">
+
+        <nav class="header__menu menu" x-show="menuIsOpen">
+            <h1 class="menu__h1">Menu</h1>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+            
             <ul class="menu__list">
                 <li class="menu__item"> 
-                    <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
+                    <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        The wind rises</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="filmographie.html">Myazaki et sa filmographie</a>
+                    <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        Myazaki and his Filmography </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="headup.html">Head Up - The Score</a>
+                    <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >
+                        Head Up - The Score</a>
                 </li>
                 <li class="menu__item"> 
-                    <a class="menu__link" href="cartographie.html">Cartographie d'un univers</a>
+                    <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >
+                        Cartography of a universe</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="nottingham.html">Nottingham</a>
+                    <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >
+                        Nottingham</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="sionvoyageait.html">Et si on voyageait ?</a>
+                    <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >
+                        And if we travel a little ?</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="ressourcesterrestres.html">Ressources et déclin</a>
+                    <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >
+                        Resources and decline</a>
                 </li>
             </ul>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="glossaire.html">Glossaire</a>  
-                </li class="menu__item">
-                <li>
-                    <a class="menu__link" href="contacts.html">Contacts</a>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+
+            <ul class="menu__list menu_4">
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="glossaire.html">Glossary
+                    <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="autresprojets.html">Autres projets</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="contacts.html">Contacts
+                    <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="apropos.html">À popos</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="autresprojets.html">Other projects
+                    <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="apropos.html">About me
+                    <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
+
     <main>
-        <img src="../public/img/img/pagemusique/musique.webp" alt="jackette de l'album Head Up">
-        <h1>"Head Up" - The Score</h1>
-        <section>
-            <p>La musique “Head Up” écrite et composée par The score est sortie en juillet 2021. La première fois que je l’ai écouté,
-                j’allais en vacances à la mer. </p>
-            <p>Les paroles suggèrent de ne pas se laisser noyer par le courant. Cette musique me
-                correspond parfaitement car je ne sais pas nager</p>
-        </section>
-        
-        <section>
-            <p>lien de la vidéo youtube à mettre</p>
-            <p>Logo du Groupe The Score et lien vers le clip vidéo</p>
-        </section>
+        <div class="header__body--titre">
+            <span class="header_titre--barre"></span>
+            <h1 class="header__titre">Head Up</h1>
+            <span class="header_titre--barre"></span>
+        </div>
 
-        <section>
-            <h2>Pourquoi avoir choisi cette musique ? </h2>
-            <p>Pour la petite histoire, j’allais entamer ma deuxième année de classe préparatoire scientifique après les grandes
-                vacances en 2021. J’avais besoin de courage et de motivation pour tenir une année de plus. </p>
-            <p>Cette musique a un rythme entraînant et j’aime beaucoup les musiques de genre pop ou un peu rock. 
-                Celle-ci a tout de suite été appréciée dès ma première écoute.</p>
-            <p>En général j’aime toutes les musiques sorties par The score. Elles ont un style semblable tout en se démarquant.</p>
-        </section>
-        
-        <section>
-            <h2>Analyse personnelle</h2>
-            <p>Extrait du refrain :</p>
-            <p>“As long as air's in my lungs
-                Blood's in my veins (veins)
-                I'm not going down this way
-                I gotta keep my head up, up, up, up
-                Up above the water, up above the water”
+        <section class="bulle">
+            <img class="img__article" src="../public/img/img/pagemusique/musique.webp" alt="jackette de l'album Head Up">
+            <h1>"Head Up" - The Score</h1>
+            <p>In July 2021, the song “Head Up” was written and composed by the band The Score. 
+                The first time I listened to it, I was going to the sea for the holidays.</p>
+            <p>It was a perfect and a funny situation when I think about it. </p>
+                
+            <p>The lyrics of the music suggest keeping the head above the water, and not drowning. 
+                The song corresponds to me because I don’t know how to swim.
             </p>
-            <p>Le refrain suggère de rester la tête hors de l’eau et de ne pas lâcher prise pour ne pas se noyer. Il encourage les gens à s’accrocher coûte que coûte à ce qui leur tient à cœur.</p>
-            <p>lien vers le clip vidéo</p>
-            <p>La musique est en trois parties, la première est une phase sombre de solitude. Dans le premier refrain, la personne concernée par le “je” essaye de trouver sa place.</p>
-            <p>“Lately, I've been feeling so alone
-                Can someone give the antidote 
-                to me so I can
-                Finally understand where I belong?
-                The world outside to me is like an ocean and I”
-                </p>
-            <p>Une solitude accentuée par la comparaison du monde à un océan profond.
-                Dans le clip vidéo, cette phase est marqué par un liquide noir puis rouge qui coule sur un buste. Cette tête qui pourrait sortir de l’eau semble submergé par des idées noires représenté par le liquide noir. </p>
-            <p>Le liquide rouge qui se déverse ensuite représenterait plutôt la mort et le sang. La vidéo étant partiellement en noir et blanc est en accord avec ce premier couplet.</p>
-        </section>
-
-        <section>
-            <img src="../public/img/img/pagemusique/musique3.webp" alt="buste avec de la peinture noire">
+        
+            <video controls src="https://medias.marionmura.fr/headup_video.mp4" poster="../public/img/img/pagemusique/musique2.webp"></video>
             <figure>
-                <figcaption>Image du clip vidéo</figcaption>
+                <figcaption>Logo of the group The Score and link to the video clip</figcaption>
             </figure>
-            <p>Au deuxième couplet, on se sent noyé. Le liquide bleu coule sur le buste, on comprend qu’il est sous l’eau. 
-                Cet océan qui représente le monde est profond. 
-                Que se passe-t-il si l’on touche le fond ? Est-il possible de remonter à la surface ?</p>
-            <p>C’est une phase de doute où l’on peut perdre espoir.</p>
-            <p>Le “je” décrit dans les paroles s’accroche et continue de s’accrocher. On ne le devine pas forcément dans les paroles car la musique se termine sur le refrain.</p>
-            <p>Mais au troisième couplet dans la vidéo c’est un liquide vert puis jaune qui se déverse sur le buste. 
-                Le vert représente l’espoir, on comprend alors qu’il est possible de remonter à la surface et que rien n’est perdu.
+
+            <h2>Why did I choose this song ? </h2>
+            <p>For context, I was going back to my second year of my preparatory class in physics and chemistry after the summer holidays. 
+                I needed to be courageous, and strong mentaly. </p>
+            <p>This music has a catchy rhythm and I really like pop and (a little) rock songs.  
+                I really liked this one at the first listen.</p>
+            <p>Generally I like all of the songs produced by the group The Score because they are original and similar at the same time. 
+                We can recognize at the beginning of a song that it was composed by the band.
             </p>
-            <p>Cette musique me tient à cœur car elle est significative.</p>
-        </section>
         
-        <section>
-            <h2>Qui est le groupe The Score ?</h2>
-            <p>The Score est un groupe de rock composé de deux membres. 
-                Eddie Anthony est guitariste et chanteur, Edan Dover joue au clavier et est producteur.
+            <h2>Personal Analysis</h2>
+            <p>An extract of the lyrics :</p>
+            <div class="paroles">
+                <p class="parole1">As long as air's in my lungs</p>
+                <p>Blood's in my veins (veins)</p>
+                <p>I'm not going down this way</p>
+                <p>I gotta keep my head up, up, up, up</p>
+                <p class="parole2">Up above the water, up above the water</p>
+            </div>
+            <p>This part of the lyrics suggests to keep the head above the water and don’t let it get to avoid drowning. It helps people to hold what is important to them and to follow their dreams. 
             </p>
-            <p>Ils ont produit ces 3 dernières années beaucoup de musiques entraînantes comme Head Up. 
-                Ce sont des musiques qui redonnent confiance en soi comme Glory, Unstoppable, Stronger, The fear, Pressure, … 
-            </p>
-            <img src="../public/img/img/pagemusique/musique4.webp" alt="image du groupe issue du clip vidéo">
+            <p>The song is in 3 parts and the first one is a dark, deep and lonely part. 
+                The lyrics of the first part are personal due to the “I” that includes the person who listens. This person tries to have a place in society.</p>
+            <div class="paroles">
+                <p class="parole1">Lately, I've been feeling so alone</p>
+                <p>Can someone give the antidote </p>
+                <p>to me so I can</p>
+                <p>Finally understand where I belong?</p>
+                <p >The world outside to me </p>
+                <p class="parole2">is like an ocean and I</p>
+                </div>
+            <p>This loneliness is emphasized by the comparison of the world to a deep ocean. In the video, this phase is symbolized by a black and red paint spilled on a bust. 
+                The head that goes out of the water seems to be submerged by dark thoughts. </p>
+            <p>In reality these dark thoughts are represented by the black paint. The red paint represents more blood and death.</p>
+
+            <img class="img__article" src="../public/img/img/pagemusique/musique3.webp" alt="buste avec de la peinture noire">
             <figure>
-                <figcaption>Image extraite du clip vidéo, Eddie Anthony à gauche et Edan Dover au piano</figcaption>
+                <figcaption>Picture of the bust from the video clip</figcaption>
+            </figure>
+            <p>In the second verse, we are drowning. A blue paint falls on the bust, we understand that the person concerned by the lyrics is underwater. The ocean that represents the world is deep.
+                  What happens if you hit the bottom? 
+                  Is it possible to get back to the surface?</p>
+            <p>This is a phase of doubt where you can lose hope.</p>
+            <p>The person concerned by the lyrics hangs on and keeps hope. 
+                We can not guess it at first because the music finishes on the chorus which is sad.</p>
+            <p>At the third verse in the video it is a green paint and then a yellow paint that falls on the bust. Green symbolizes hope, we understand that nothing is impossible and we can continue.
+            </p>
+            <p>I love this song because I recognize myself in the lyrics. 
+            </p>
+        
+            <h2>Who is The Score ?</h2>
+            <p>The Score is a rock band composed of Eddie Anthony who is guitarist and singer and Edan Dover who is pianist and producer.
+            </p>
+            <p>These last years they produced catchy music like Head Up. 
+                These songs give confidence to people who need it like Glory, Unstoppable, Stronger, The fear, Pressure, …
+            </p>
+            <img class= "img__article" src="../public/img/img/pagemusique/musique4.webp" alt="image du groupe issue du clip vidéo">
+            <figure>
+                <figcaption>picture of the band with Eddie Anthony at the left and Edan Dover at the piano.
+                </figcaption>
             </figure>
         </section>
     </main>
 
     <footer>
-        <h2>MENTIONS LÉGALES</h2>
-        <p>Projet réalisé dans le cadre d’un exercice au <a href="http://mmimontbeliard.com/">département MMi de Montbéliard</a>
-        </p>
-        <p>Marion Mura MMi 1 groupe B2 
-            <a href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a>
-        </p>
-        <a href="#"><img src="../public/img/icons/logov2.webp" alt="logo pour retour à la page d'accueil">
-        </a>
-        <a href="http://mmimontbeliard.com/">
-            <img src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
-        </a>
+        <h2 class="footer__h2">LEGAL MENTION</h2>
+        <p class="footer__p">A project realised in a exercise for the <a class="footer__a" href="http://mmimontbeliard.com/">MMi département of Montbéliard</a></p>
+        <p class="footer__p--block">Marion Mura</p>
+        <p class="footer__p--block">MMi 1 group B2</p>
+        <p class="footer__p--block"><a class="footer__a" href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a></p>
+        
+        <div class="footer__container footer_border">
+            <a class="footer__btn" href="contacts.html">Contact</a>
+            <a class="footer__btn" href="apropos.html">About me</a>
+            <a class="footer__btn" href="autresprojets.html">Other projects</a>
+        </div>
+        <div class="footer__container">
+            <a class="footer__logo--a" href="/FR/apropos.html">
+                <img  class="footer__logo" src="../public/img/icons/logov2.webp" alt="logo pour en savoir plusretour à la page d'accueil">
+            </a>
+            <a class="footer__logo--a" href="http://mmimontbeliard.com/">
+                <img class="footer__logo--mmi" src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
+            </a>
+            <a class="footer__logo--a" href="https://github.com/MMI-SAE-105/2022-sae105-projet-marionmura">
+                <img class="footer__logo--github" src="../public/img/icons/github.svg" alt="logo projet github">
+            </a>
+            <a class="footer__logo--a" href="https://www.figma.com/proto/ZEwCbbJKhCPRFDCW9Aj3ut/Maquettes-projet-individuel-%E2%80%94-Marion-MURA?node-id=1346%3A3274&scaling=scale-down&page-id=1346%3A2817&starting-point-node-id=1346%3A3274&show-proto-sidebar=1">
+                <img class="footer__logo--figma" src="../public/img/icons/figma.svg" alt="logo projet figma">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
