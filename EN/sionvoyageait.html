@@ -11,154 +11,207 @@
 
 </head>
 <body>
-    <header class="header">
+    <header class="header"  x-data="{menuIsOpen:false}">
         <a class="header__logo-link" href="index.html">
-            <img class="header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
-        <button >
-            <img src="../public/img/icons/menu.webp" alt="bouton menu">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
+        <a class="header__EN" href="../FR/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/FRicone.svg" alt="icone FR">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
         </button>
-        <nav class="header__menu menu">
+
+        <nav class="header__menu menu" x-show="menuIsOpen">
+            <p class="menu__h1 h1">Menu</p>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+            
             <ul class="menu__list">
                 <li class="menu__item"> 
-                    <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
+                    <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        The wind rises</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="filmographie.html">Myazaki et sa filmographie</a>
+                    <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        Myazaki and his Filmography </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="headup.html">Head Up - The Score</a>
+                    <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >
+                        Head Up - The Score</a>
                 </li>
                 <li class="menu__item"> 
-                    <a class="menu__link" href="cartographie.html">Cartographie d'un univers</a>
+                    <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >
+                        Cartography of a universe</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="nottingham.html">Nottingham</a>
+                    <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >
+                        Nottingham</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="sionvoyageait.html">Et si on voyageait ?</a>
+                    <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >
+                        And if we travel a little ?</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="ressourcesterrestres.html">Ressources et déclin</a>
+                    <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >
+                        Resources and decline</a>
                 </li>
             </ul>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="glossaire.html">Glossaire</a>  
-                </li class="menu__item">
-                <li>
-                    <a class="menu__link" href="contacts.html">Contacts</a>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+
+            <ul class="menu__list menu_4">
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="glossaire.html">Glossary
+                    <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="autresprojets.html">Autres projets</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="contacts.html">Contacts
+                    <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="apropos.html">À popos</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="autresprojets.html">Other projects
+                    <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="apropos.html">About me
+                    <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <img src="../public/img/img/pagespoirs/espoir.webp" alt="aéronef">
-        <h1>Toujours plus haut, toujours plus loin …
-            Et si on voyageait ?</h1>
-        <section>
-            <p>Le film choisi porte sur l’évolution de l’aviation pendant la Seconde Guerre mondiale. </p>
-            <p>Alors je suis curieuse de savoir comment ont évolué les moyens de transports et depuis quand certains existent.</p>
-        </section>
-        
-        <section>
-            <h2>Le dirigeable est-il une pure invention?</h2>
-            <p>Souvent présent dans des dessins animés ou dans le manga Les mémoires de Vanitas, cet engin fait rêver. </p>
-            <p>Mais a-t-il vraiment existé ?</p>
-            <p>Et oui ! Il a vraiment existé ! </p>
-            <p>Son premier vol à eu lieu en 1852. Ce moyen de locomotion incroyable a parcouru 27 km en ne pouvant se déplacer à plus de 10 km par heure.
-                Inventé après la montgolfière, le dirigeable insensible aux vents se dirige plus facilement que celle-ci.
-                L’appareil a été inventé par Henri Giffard.
-            </p>
-            <p>Henri Giffard était un chercheur français de la navigation aérienne, passionné par les locomotives. Il est né en 1825 et mort en 1882.</p>
-            <img src="../public/img/img/pagespoirs/espoir2.webp" alt="dirigeable">
-            <figure>
-                <figcaption>Image de dirigeable</figcaption>
-            </figure>
-            <p>Le dirigeable peut voler grâce à un moteur à vapeur qui entraîne une hélice au centre de l’appareil.</p>
-            <p>Il reste impressionnant par sa taille car on se demande forcément, comment quelque chose d’aussi gros peut voler ? Mais ça c’est une autre histoire.
-            </p>
-        </section>
-        
-        <section>
-            <h2>Quelle est l’origine de la locomotive ?</h2>
-            <p>L’inventeur du dirigeable étant passionné de locomotives, pourquoi ne pas en savoir plus ?</p>
-            <p>La locomotive à vapeur est fonctionnelle de 1804 jusque dans les années 1950. Conçue en Angleterre par Richard Trevithick.</p>
-            <p>La locomotive a été longtemps utilisée dans certains pays où le charbon est peu cher et abondant.
-                Également pour les trajets en montagne pour des raisons de pression atmosphérique.</p>
-            <p>Cet appareil a connu beaucoup d’évolutions, et je l’apprécie pour son charme (elle reste très bruyante et moins confortable que le train actuellement).</p>
-            <img src="../public/img/img/pagespoirs/espoir3.webp" alt="image de locomotive">
-            <figure>
-                <figcaption>Image d’un train extraite du film “Le vent se lève”</figcaption>
-            </figure>
-        </section>
 
-        <section>
-            <h2>Les avions un moyen de transport moderne</h2>
-            <p>Les premiers prototypes qui permettent à l’homme de voler ont été inventés par Clément Ader en 1870 pendant la guerre.</p>
-            <p>Mais l’avion motorisé fiable conçu par les frères Wright a effectué son premier vol avec réussite en 1903. Cette étape marque le début de l’aviation même si elle n’a pas marqué à l’époque.
-               Puis l’appareil a vécu beaucoup d’évolutions notamment pour des fins militaires pendant la Seconde Guerre mondiale. </p>
-            <p>Au Japon, Jirô (l’ingénieur en aéronautique) va contribuer à cette évolution en concevant les bombardiers japonais après plusieurs voyages en Europe.
+    <main>
+        <div class="header__body--titre">
+            <span class="header_titre--barre"></span>
+            <h1 class="header__titre">If we travel ?</h1>
+            <span class="header_titre--barre"></span>
+        </div>
+
+        <section class="bulle">
+            <img class="img__article" src="../public/img/img/pagespoirs/espoir.webp" alt="aéronef">
+            <p class="h1">Always higher, always further …
+                And If we travel ?</p>
+            <p>The movie is about the improvement of aviation during the Second World War.</p>
+            <p>So I am curious to know how the means of transport evolved and since when some of them exist.
             </p>
-            <img src="../public/img/img/pagespoirs/espoir4.webp" alt="image d'avion">
+        
+            <h2>Is the airship an invention ?</h2>
+            <p>In the manga "Memories of Vanitas" there is a drawing of a dirigible called La Baleine, this machine makes you dream.</p>
+            <h2>But did the airship really exist ?</h2>
+            <p>Yes, it really existed !</p>
+            <p>Its first flight took place in 1852. This incredible means of locomotion covered 27 km. while not being able to move at more than 10 km per hour. Invented after the hot-air balloon, the airship is easier to navigate than the hot-air balloon. 
+                The dirigeable was invented by Henri Giffard.                
+            </p>
+            <p>Henri Giffard was a French researcher of air navigation, passionate about locomotives. He was born in 1825 and died in 1882.</p>
+            <img class="img__article" src="../public/img/img/pagespoirs/espoir2.webp" alt="dirigeable">
             <figure>
-                <figcaption>Image d’avion extraite du film “Le vent se lève”
+                <figcaption>Picture of an airship</figcaption>
+            </figure>
+            <p>The airship can fly thanks to a steam engine that drives a propeller in the center of the device.</p>
+            <p>It remains impressive by its size. One may wonder how something so big can fly ? But that's another story.
+            </p>
+        
+            <h2>What is the origin of the locomotive?</h2>
+            <p>The inventor of the airship being passionate about locomotives, why not about knowing more? </p>
+            <p>The steam locomotive was functional from 1804 until the 1950s. Designed in England by Richard Trevithick.</p>
+            <p> The locomotive was used for a long time in some countries where coal was cheap and abundant. It was also used in mountainous areas for reasons of atmospheric pressure. 
+            </p>
+            <p>This device has known many evolutions, and I appreciate it for its charm (it remains very noisy and less comfortable than the train nowadays).</p>
+            <img class="img__article" src="../public/img/img/pagespoirs/espoir3.webp" alt="image de locomotive">
+            <figure>
+                <figcaption>picture of a train from “The Wind rises”
                 </figcaption>
             </figure>
-            <p>On constate que depuis les années 70 il n’y a plus beaucoup d’évolution au niveau du train et de l’aviation (rares sont ceux qui pourraient voir un dirigeable aujourd’hui).</p>
+
+            <h2>Airplanes a modern mean of transport</h2>
+            <p>The first prototypes that allow man to fly were invented by Clement Ader in 1870 during the war. </p>
+            <p>But the reliable motorized airplane designed by the Wright brothers made its first successful flight in 1903. This milestone marked the beginning of aviation even if it did not score at the time. 
+                Then the aircraft went through many evolutions, especially for military purposes during the Second World War.
+                </p>
+            <p> In Japan, Jirô (the aeronautical engineer) contributed to this evolution by designing the Japanese bombers after several trips to Europe.
+            </p>
+            <img class="img__article" src="../public/img/img/pagespoirs/espoir4.webp" alt="image d'avion">
+            <figure>
+                <figcaption>picture of a plane from “The Wind rises”
+                </figcaption>
+            </figure>
+            <p>We noticed that since the 70's there is not much evolution in trains and aviation (few people could see an airship today).
+            </p>
+
+            <h2>What kind of hope for our generation?</h2>
+            <p>In retrospect, we can see that society is evolving very quickly, especially for our generation. Internet, artificial intelligence, robots, more and more powerful devices, ...</p>
+            <p>But since the 2000s, we have seen less progress in the means of transport compared to the last century. Except for the shift to less polluting vehicles, hybrid or electric models, or faster trains. In 2019, in Japan, the first train that can reach 400 km / h ran.
+            </p>
+            <p>In terms of traditional means of transportation such as trains or planes, progress seems to have stagnated in terms of comfort. </p>
+            <p>I am still amazed at each trip, and to see these devices in operation. Progress never stops, I am curious to see what could be invented in the future to travel in an unusual way.</p>
+            <p>Man always ends up reaching his dreams.</p>
         </section>
 
+    
         <section>
-            <h2>Quel espoir pour notre génération ?</h2>
-            <p>Rétrospectivement on constate que la société évolue très vite, surtout pour notre génération. Internet, les intelligences artificielles, les robots, des appareils toujours plus puissants, …</p>
-            <p>Mais depuis les années 2000 on constate moins de progrès sur les transports par rapport au siècle dernier. Hormis le passage à des véhicules moins polluants, des modèles hybrides ou électriques, ou des trains plus rapides. 
-               En 2019, au Japon a roulé le premier train pouvant atteindre les 400 km/h.</p>
-            <p>Au niveau des moyens de transport classiques comme le train ou l'avion, les progrès semblent avoir stagné au niveau du confort. </p>
-            <p>Je reste émerveillée à chaque voyage, et de voir ces appareils en fonctionnement. On n’arrête pas les progrès, je suis curieuse de voir ce qu’on pourrait inventer dans le futur pour voyager de façon insolite.</p>
-            <p>L’Homme finit toujours par atteindre ses rêves.</p>
-        </section>
+            <div class="header__body--titre">
+                <span class="header_titre--barre"></span>
+                <h2 class="section__avoirplus">You can be interested</h2>
+                <span class="header_titre--barre"></span>
+            </div>
 
-        <section>
-            <h2>À voir aussi</h2>
-            <ul>
+            <article class="preview">
                 <a href="nottingham.html">
-                    <li class="preview">
-                        <p class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-4.webp" alt="House Council de Nottingham">
-                        <h3 class="preview__titre">Nottingham</h3></p>
-                        <p class="preview__description">Vous rêvez de voyager ? Et si on visitait Nottingham et des lieux “jumeaux” de la ville ?</p>
-                        <p class="preview__alignementdroite">en lire plus</p>
-                    </li>
+                <div class="preview__wrap-card">
+                    <div class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-4.webp" alt="House Council de Nottingham"></div>
+                    <div class="preview__text-wrap"><h3 class="preview__titre">Nottingham</h3>
+                    <p class="preview__description">You want to travel ? Do you want to visit Nottingham and its beautiful places ?
+                    </p></div>
+                </div>    
+                <p class="preview__alignementdroite">read more</p>
                 </a>
+            </article>
+            <article class="preview">
                 <a href="leventseleve.html">
-                    <li class="preview">
-                        <p class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-0.webp" alt="Jirô et son avion">
-                        <h3 class="preview__titre">"Le vent se lève"</h3></p>
-                        <p class="preview__description">Sorti en 2013, ce film d'animation des studios Ghibli témoigne d'une histoire touchante entre un ingénieur et une jeune fille.</p>
-                        <p class="preview__alignementdroite">en lire plus</p>
-                    </li>
+                <div class="preview__wrap-card">
+                    <div class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-0.webp" alt="Jirô et son avion"></div>
+                    <div class="preview__text-wrap"><h3 class="preview__titre">"The wind rises"</h3>
+                    <p class="preview__description">Released in 2013, this movie from the Ghibli studios is about a love story between an engineer and a young girl.
+                    </p></div>
+                </div>
+                <p class="preview__alignementdroite">read more</p>
                 </a>
-            </ul>
+            </article>
         </section>
+
     </main>
 
     <footer>
-        <h2>MENTIONS LÉGALES</h2>
-        <p>Projet réalisé dans le cadre d’un exercice au <a href="http://mmimontbeliard.com/">département MMi de Montbéliard</a>
-        </p>
-        <p>Marion Mura MMi 1 groupe B2 
-            <a href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a>
-        </p>
-        <a href="#"><img src="../public/img/icons/logov2.webp" alt="logo pour retour à la page d'accueil">
-        </a>
-        <a href="./FR/http://mmimontbeliard.com/">
-            <img src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
-        </a>
+        <h2 class="footer__h2">LEGAL MENTION</h2>
+        <p class="footer__p">A project realised in an exercise for the <a class="footer__a" href="http://mmimontbeliard.com/">MMi département of Montbéliard</a></p>
+        <p class="footer__p--block">Marion Mura</p>
+        <p class="footer__p--block">MMi 1 group B2</p>
+        <p class="footer__p--block"><a class="footer__a" href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a></p>
+        
+        <div class="footer__container footer_border">
+            <a class="footer__btn" href="contacts.html">Contact</a>
+            <a class="footer__btn" href="apropos.html">About me</a>
+            <a class="footer__btn" href="autresprojets.html">Other projects</a>
+        </div>
+        <div class="footer__container">
+            <a class="footer__logo--a" href="/FR/apropos.html">
+                <img  class="footer__logo" src="../public/img/icons/logov2.webp" alt="logo pour en savoir plusretour à la page d'accueil">
+            </a>
+            <a class="footer__logo--a" href="http://mmimontbeliard.com/">
+                <img class="footer__logo--mmi" src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
+            </a>
+            <a class="footer__logo--a" href="https://github.com/MMI-SAE-105/2022-sae105-projet-marionmura">
+                <img class="footer__logo--github" src="../public/img/icons/github.svg" alt="logo projet github">
+            </a>
+            <a class="footer__logo--a" href="https://www.figma.com/proto/ZEwCbbJKhCPRFDCW9Aj3ut/Maquettes-projet-individuel-%E2%80%94-Marion-MURA?node-id=1346%3A3274&scaling=scale-down&page-id=1346%3A2817&starting-point-node-id=1346%3A3274&show-proto-sidebar=1">
+                <img class="footer__logo--figma" src="../public/img/icons/figma.svg" alt="logo projet figma">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
