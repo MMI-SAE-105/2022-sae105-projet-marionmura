@@ -8,153 +8,198 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 
     <link rel="stylesheet" href="../src/css/style.css">
+    
 
 </head>
 <body>
-    <header class="header">
+    <header class="header"  x-data="{menuIsOpen:false}">
         <a class="header__logo-link" href="index.html">
-            <img class="header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
-        <button >
-            <img src="../public/img/icons/menu.webp" alt="bouton menu">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
+        <a class="header__EN" href="../FR/leventseleve.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/FRicone.svg" alt="icone FR">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
         </button>
-        <nav class="header__menu menu">
+
+        <nav class="header__menu menu" x-show="menuIsOpen">
+            <p class="menu__h1 h1">Menu</p>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+            
             <ul class="menu__list">
                 <li class="menu__item"> 
-                    <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
+                    <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        The wind rises</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="filmographie.html">Myazaki et sa filmographie</a>
+                    <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        Myazaki and his Filmography </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="headup.html">Head Up - The Score</a>
+                    <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >
+                        Head Up - The Score</a>
                 </li>
                 <li class="menu__item"> 
-                    <a class="menu__link" href="cartographie.html">Cartographie d'un univers</a>
+                    <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >
+                        Cartography of a universe</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="nottingham.html">Nottingham</a>
+                    <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >
+                        Nottingham</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="sionvoyageait.html">Et si on voyageait ?</a>
+                    <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >
+                        And if we travel a little ?</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="ressourcesterrestres.html">Ressources et déclin</a>
+                    <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >
+                        Resources and decline</a>
                 </li>
             </ul>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="glossaire.html">Glossaire</a>  
-                </li class="menu__item">
-                <li>
-                    <a class="menu__link" href="contacts.html">Contacts</a>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+
+            <ul class="menu__list menu_4">
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="glossaire.html">Glossary
+                    <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="autresprojets.html">Autres projets</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="contacts.html">Contacts
+                    <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="apropos.html">À popos</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="autresprojets.html">Other projects
+                    <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="apropos.html">About me
+                    <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <img src="../public/img/img/pagefilm/film.webp" alt="couverture du film Nahoko">
-        <h1>"Le vent se lève, il faut tenter de vivre"</h1>
-        <section>
-            <p>“Le vent se lève” est un des derniers films d’animation produit par Hayao Miyazaki. 
-                Il est sorti en 2013, son nom est tiré d’un célèbre poème de Paul Valéry “Le vent se lève, il faut tenter de vivre”. </p>
-            <p>Le film rend hommage à un ingénieur en aéronautique Jiro Horikoshi.</p>
-            <p>Il a conçu les bombardiers Mitsubishi A6M et A5M, aussi appelés le chasseur Zero et Claude dans le long métrage</p>
-        </section>
+    <main> 
+        <div class="header__body--titre">
+            <span class="header_titre--barre"></span>
+            <h1 class="header__titre">The wind rises</h1>
+            <span class="header_titre--barre"></span>
+        </div>
+
+        <section class="bulle">
+            <img class="img__article" src="../public/img/img/pagefilm/film.webp" alt="couverture du film Nahoko">
+            <p class="h1">"The wind rises, we must try to live"</p>
+            <p>"The Wind Rises" is a 2013 animated production directed by Hayao Miyazaki. Its title comes from a famous poem by French poet and philosopher Paul Valery, "The wind rises, we must try to live".</p>
+            <p>The story pays tribute to an aeronautical engineer Jiro Horikoshi.
+            </p>
+            <p>Jirô was born in 1903 and died in 1982. He was a major contributor to japan’s engineering of state of the art bombers. He designed the Mitsubishi A6M and A5M bombers, also called the Zero fighter and Claude in the movie.</p>
         
-        <section>
-            <h2>Synopsis du film</h2>
-            <p>Le film commence quand Jirô est enfant. Il veut devenir pilote mais étant moype il ne le pourra jamais. Il se concentre alors sur l’aéronautique toute sa vie.</p>
-            <p>Plusieurs évènements ont lieu pendant sa vie et sont retranscrits dans le film. Par exemple le tremblement de terre de Tokyo en 1923 puis le manque d’eau potable.
-            Il y a eu la reconstruction de Tokyo pendant ses études et la crise économique Shōwa qui survient avec la faillite des banques.</p>
-            <p>Peu de temps avant le tremblement de Terre, il voyage en train et il fait la connaissance d’une jeune fille, Nahoko.</p>
-            <p>Cette scène est mémorable car c’est la première où est cité le titre du film et la fin du vers : 
-            “Le vent se lève, il faut tenter de vivre”.</p>
-            <p>Ce vers donne espoir et encourage les personnes à réaliser leurs rêves, 
-            notamment celui de Jirô qui tourne autour de l’aviation. </p>
-            <p>Tout au long du film, il y a des passages oniriques où il rencontre le célèbre comte Caproni. Un ingénieur en 
-            aéronautique avec qui il partage son rêve, il s'échangent alors des conseils qui aideront Jirô à progresser.</p>
-        </section>
+            
+            <video controls src="https://medias.marionmura.fr/leventseleve_video.mp4"></video>
         
-        <section>
-            <img src="../public/img/img/pagefilm/film2.webp" alt="avion en papier, image issue du film">
+            <h2>Synopsis of the movie</h2>
+            <p>The movie begins when Jirô is a child. He wants to become a fighter pilot, but due to him being average he will never be able to. He then decides to shift his focus on aeronautics all his life. </p>
+            <p>Several major events that took place during his lifetime are shown in the movie, such as the 1923 earthquake in Tokyo. There were also the water crisis, Tokyo’s reconstruction or the Shōwa economic collapse due to the failure of state banks.
+            </p>
+            <p>Ahead of the earthquake, he met a young girl named Nahoko while he was traveling by train.</p>
+            <p>This scene is memorable because it is the first one where the title of the film and the end of the line from the poem "The wind is rising, we must try to live" is quoted.</p>
+            <p>This sentence gives hope and encourages people to pursue their dreams, especially Jirô's which is about aviation. </p>
+            <p>Throughout the movie, there are dreamlike passages where he meets the famous Count Caproni. An aeronautical engineer with whom he shares his dream, they exchange advice that will help Jirô to progress.</p>
+        
+            <img class="img__article" src="../public/img/img/pagefilm/film2.webp" alt="avion en papier, image issue du film">
             <figure>
-                <figcaption>Image extraite du film, Jirô envoie un avion en papier à Nahoko</figcaption>
+                <figcaption> Still from the movie, Jirô sends a paper plane to Nahoko to flirt with her
+                </figcaption>
             </figure>
-            <p>On remarque un coup de foudre et une cohésion entre Nahoko et Jirô lors du voyage. Jirô revient pour aider la jeune
-            fille à rentrer chez elle après le tremblement de terre.</p>
-            <p>Quelques années plus tard, ils se reverront lorsque Jirô
-                voyagera en Europe. Il voyage pour étudier des avions allemands afin d'avancer les progrès sur l’aviation au Japon.
+            <p>It’s love at first sight and a cohesion between Nahoko and Jirô soon arises during the trip. Jirô comes back to help the young girl move back home after the earthquake. </p>
+            <p>They meet again when Jirô travels to Germany to bring japanese aviation up to date with worldwide standards.
             </p>
-            <p>Malheureusement Nahoko est malade de la tuberculose comme sa mère. 
-                Ils décident de se marier rapidement après l’avoir appris.
+            <p> Unfortunately Nahoko, like her mother, has tuberculosis. They decide to get married quickly after learning about it. 
             </p>
-        </section>
         
-        <section>
-            <h2>Pourquoi avoir choisi ce film?</h2>
-            <p>Sur la fin du film on remarque que Nahoko restera en arrière plan tout au long de la vie de Jirô. Bien qu’elle soit
-                malade, il reste très concentré sur son travail jusqu’à réussir à concevoir son avion.
+            <h2>Why did I choose this movie?</h2>
+            <p>At the end of the movie we notice that Nahoko remains in the background throughout Jirô's life. Although she is ill, he remains very focused on his work until he succeeds in designing his plane.
             </p>
-            <p>Sa femme meurt pendant les tests de vitesse du bombardier, qui seront un succès. 
-                Il la retrouve dans un de ses rêves où ils se diront au revoir. 
-                À ce moment elle cite le célèbre vers de Paul Valéry, on comprend que Jirô a 
-                réalisé son rêve et doit commencer à vivre pour lui.
+            <p>Unfortunately, his wife passes away during his prototype’s successful speed test. He sees her one last time in his dreams where they say their goodbyes to each other. At this moment she quotes the famous verse of Paul Valéry. Jirô has finally realized his dream and must start to live for it.
             </p>
-            <p>Personnellement j’aime beaucoup ce film car il est émouvant, très intéressant au niveau de l’aviation et sur l’époque.</p>
-            <p>L’histoire d’amour est très touchante mais je trouve Jirô égoïste d’avoir laissé sa femme vivre avec lui alors qu’elle
-                avait besoin de soins.</p>
-            <p>Même si elle l’aime beaucoup et lui demande de vivre (par le vers du poème). Maintenant qu’il a
-                réalisé son rêve il ne pourra même pas profiter d’une vie de famille puisque sa femme n’est plus à ses côtés. 
-                Il y a un
-                gros suspense sur la fin du film et sur ce que Jirô va faire après la guerre.</p>
-            <img src="../public/img/img/pagefilm/film3.webp" alt="avion conçu par Jirô, image issue du film">
+            <img class="img__article" src="../public/img/img/pagefilm/film3.webp" alt="avion conçu par Jirô, image issue du film">
             <figure>
-                <figcaption>Le Mitsubishi A6M conçu par Jirô</figcaption>
+                <figcaption>The Mitsubishi A6M engineered by Jirô</figcaption>
             </figure>
+            <p>I personally like this movie a lot because it is a heartbreaking love story, with an interesting view on Aviation.</p>
+            <p> The love story is very emotional, but I find Jirô selfish to have let his wife live with him while she needed care.</p>
+            <p>Though she loves him a lot and asks him to live (by the verse of the poem). Now that he has achieved his dream he won't be able to enjoy a family life as his wife is no longer alive. There is a big suspense about the end of the film and what Jirô will do after the war.
+            </p>
         </section>
 
+
         <section>
-            <h2>À voir aussi</h2>
-            <ul>
+            <div class="header__body--titre">
+                <span class="header_titre--barre"></span>
+                <h2 class="section__avoirplus">You can be interested</h2>
+                <span class="header_titre--barre"></span>
+            </div>
+            <article class="preview">
                 <a href="filmographie.html">
-                    <li class="preview">
-                        <p class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-1.webp" alt="image du film de Princesse Mononoke">
-                        <h3 class="preview__titre">Filmographie</h3></p>
-                        <p class="preview__description">Venez découvrir les films d’animation réalisés par Hayao Miyazaki.</p>
-                        <p class="preview__alignementdroite">en lire plus</p>
-                    </li>
+                <div class="preview__wrap-card">
+                    <div class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-1.webp" alt="image du film de Princesse Mononoke"></div>
+                    <div class="preview__text-wrap"><h3 class="preview__titre">Filmography</h3>
+                    <p class="preview__description">See the other movie realised by Hayao Miyazaki.
+                    </p></div>
+                </div>
+                <p class="preview__alignementdroite">read more</p>
                 </a>
+            </article>
+    
+            <article class="preview">
                 <a href="cartographie.html">
-                    <li class="preview">
-                        <p class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-3.webp" alt="image de Totoro">
-                        <h3 class="preview__titre">Cartographie d'un univers</h3></p>
-                        <p class="preview__description">En savoir plus sur l'univers des films Ghibli ? C'est possible et il est plus accessible que vous ne le croyez !</p>
-                        <p class="preview__alignementdroite">en lire plus></p>
-                    </li>
-                </a>      
-            </ul>
+                <div class="preview__wrap-card">
+                    <div class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-3.webp" alt="image de Totoro"></div>
+                    <div class="preview__text-wrap"><h3 class="preview__titre">Cartography of a universe</h3>
+                    <p class="preview__description">You want to see more about Miyazaki’s universe ? His movies are easier to understand than you think.
+                    </p></div>
+                </div>
+                <p class="preview__alignementdroite">read more</p>
+                </a>
+            </article>
         </section>
+
     </main>
 
+
     <footer>
-        <h2>MENTIONS LÉGALES</h2>
-        <p>Projet réalisé dans le cadre d’un exercice au <a href="http://mmimontbeliard.com/">département MMi de Montbéliard</a>
-        </p>
-        <p>Marion Mura MMi 1 groupe B2 
-            <a href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a>
-        </p>
-        <a href="#"><img src="../public/img/icons/logov2.webp" alt="logo pour retour à la page d'accueil">
-        </a>
-        <a href="http://mmimontbeliard.com/">
-            <img src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
-        </a>
+        <h2 class="footer__h2">LEGAL MENTION</h2>
+        <p class="footer__p">A project realised in an exercise for the <a class="footer__a" href="http://mmimontbeliard.com/">MMi département of Montbéliard</a></p>
+        <p class="footer__p--block">Marion Mura</p>
+        <p class="footer__p--block">MMi 1 group B2</p>
+        <p class="footer__p--block"><a class="footer__a" href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a></p>
+        
+        <div class="footer__container footer_border">
+            <a class="footer__btn" href="contacts.html">Contact</a>
+            <a class="footer__btn" href="apropos.html">About me</a>
+            <a class="footer__btn" href="autresprojets.html">Other projects</a>
+        </div>
+        <div class="footer__container">
+            <a class="footer__logo--a" href="/FR/apropos.html">
+                <img  class="footer__logo" src="../public/img/icons/logov2.webp" alt="logo pour en savoir plusretour à la page d'accueil">
+            </a>
+            <a class="footer__logo--a" href="http://mmimontbeliard.com/">
+                <img class="footer__logo--mmi" src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
+            </a>
+            <a class="footer__logo--a" href="https://github.com/MMI-SAE-105/2022-sae105-projet-marionmura">
+                <img class="footer__logo--github" src="../public/img/icons/github.svg" alt="logo projet github">
+            </a>
+            <a class="footer__logo--a" href="https://www.figma.com/proto/ZEwCbbJKhCPRFDCW9Aj3ut/Maquettes-projet-individuel-%E2%80%94-Marion-MURA?node-id=1346%3A3274&scaling=scale-down&page-id=1346%3A2817&starting-point-node-id=1346%3A3274&show-proto-sidebar=1">
+                <img class="footer__logo--figma" src="../public/img/icons/figma.svg" alt="logo projet figma">
+            </a>
+        </div>
     </footer>
+
 </body>
 </html>
