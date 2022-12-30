@@ -11,150 +11,243 @@
 
 </head>
 <body>
-    <header class="header">
+    <header class="header"  x-data="{menuIsOpen:false}">
         <a class="header__logo-link" href="index.html">
-            <img class="header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
-        <button >
-            <img src="../public/img/icons/menu.webp" alt="bouton menu">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
+        <a class="header__EN" href="../FR/nottingham.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/FRicone.svg" alt="icone FR">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
         </button>
-        <nav class="header__menu menu">
+
+        <nav class="header__menu menu" x-show="menuIsOpen">
+            <p class="menu__h1 h1">Menu</p>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+            
             <ul class="menu__list">
                 <li class="menu__item"> 
-                    <a class="menu__link" href="leventseleve.html">Le Vent se lève</a>
+                    <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        The wind rises</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="filmographie.html">Myazaki et sa filmographie</a>
+                    <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
+                        Myazaki and his Filmography </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="headup.html">Head Up - The Score</a>
+                    <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >
+                        Head Up - The Score</a>
                 </li>
                 <li class="menu__item"> 
-                    <a class="menu__link" href="cartographie.html">Cartographie d'un univers</a>
+                    <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >
+                        Cartography of a universe</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="nottingham.html">Nottingham</a>
+                    <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >
+                        Nottingham</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="sionvoyageait.html">Et si on voyageait ?</a>
+                    <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >
+                        And if we travel a little ?</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="ressourcesterrestres.html">Ressources et déclin</a>
+                    <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >
+                        Resources and decline</a>
                 </li>
             </ul>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="glossaire.html">Glossaire</a>  
-                </li class="menu__item">
-                <li>
-                    <a class="menu__link" href="contacts.html">Contacts</a>
+
+            <div class="menu--titre">
+                <span class="menu__barre"></span>
+            </div>
+
+            <ul class="menu__list menu_4">
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="glossaire.html">Glossary
+                    <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="autresprojets.html">Autres projets</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="contacts.html">Contacts
+                    <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone"></a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="apropos.html">À popos</a>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="autresprojets.html">Other projects
+                    <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone"></a>
+                </li>
+                <li class="menu__item-dessous">
+                    <a class="menu__link" href="apropos.html">About me
+                    <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone"></a>
                 </li>
             </ul>
         </nav>
     </header>
     
+
     <main>
-        <img src="../public/img/img/pagelieux/lieu.webp" alt="council house">
-        <h1>Nottingham</h1>
+        <div class="header__body--titre">
+            <span class="header_titre--barre"></span>
+            <h1 class="header__titre">Nottingham</h1>
+            <span class="header_titre--barre"></span>
+        </div>
+
+        <section class="bulle">
+            <img class="img__article" src="../public/img/img/pagelieux/lieu.webp" alt="council house">
+            <p class="h1">Nottingham</p>
         
-        <section>
-            <h2>Pourquoi avoir choisi ce lieu ?</h2>
-            <p>J’ai fait un voyage en Angleterre il y a 4 ans et nous logions dans des familles à Nottingham. 
-               Nous avons beaucoup visité la ville et je l’ai adoré, alors je souhaite vous la présenter.</p>
-            <p>Les lieux similaires à Nottingham classés chronologiquement des plus au moins récents.</p>
-          
-        </section>
-        
-        <section>
-           <img src="../public/img/img/pagelieux/lieu1.webp" alt="1927 Council House de Nottingham">
-            <figure>
-                <figcaption>1927 Council House de Nottingham</figcaption>
-            </figure>
-            <img src="../public/img/img/pagelieux/lieu2.webp" alt="1874  Council House de Birmingham">
-            <figure>
-                <figcaption>1874  Council House de Birmingham</figcaption>
-            </figure>
-            <img src="../public/img/img/pagelieux/lieu3.webp" alt="1330 Château de Beaumaris">
-            <figure>
-                <figcaption>1330 Château de Beaumaris</figcaption>
-            </figure>
-            <img src="../public/img/img/pagelieux/lieu4.webp" alt="1295 Château de Chirk">
-            <figure>
-                <figcaption>1295 Château de Chirk</figcaption>
-            </figure>
-            <img src="../public/img/img/pagelieux/lieu5.webp" alt="1200  Château de Nottingham">
-            <figure>
-                <figcaption>1200  Château de Nottingham</figcaption>
-            </figure>
-            <p>Ville située en Angleterre, elle s'appelait à l’origine Snotingeham. 
+            <h2>Why did I choose this place ?</h2>
+            <p>I went on a school trip 4 years ago, and during this trip we lived with English families in Nottingham. We visited the city and I loved it. I want to show some places in Nottingham.</p>
+            <p class="frise__intro">There are some places listed from the most recent to the oldest.
+            </p>
+            
+            <div class="path__frise1">
+            </div>
+            
+            <div class="img__legende--container">
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu1.webp" alt="1927 Council House de Nottingham">
+                </div>
+                <figure class="frise__figure-r">
+                    <figcaption class="frise__legende"> 1927 Council House of Nottingham</figcaption>
+                </figure>
+            </div>
+
+            <div class="plane__frise1">
+            </div>
+
+            <div class="img__legende--container">
+                <figure class="frise__figure-l">
+                    <figcaption class="frise__legende">1874  Council House of Birmingham</figcaption>
+                </figure>
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu2.webp" alt="1874  Council House de Birmingham">
+                </div>
+            </div>
+            
+            <div class="img__legende--container">
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu3.webp" alt="1330 Château de Beaumaris">
+                </div>
+                <figure class="frise__figure-r">
+                    <figcaption class="frise__legende">1330 Beaumaris Castle</figcaption>
+                </figure>
+            </div>
+
+            <div class="path__frise2">
+            </div>
+
+            <div class="img__legende--container">
+                <figure class="frise__figure-l">
+                    <figcaption class="frise__legende">1295 Chirk Castle</figcaption>
+                </figure>
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu4.webp" alt="1295 Château de Chirk">
+                </div>
+            </div>
+            
+            <div class="plane__frise2">
+            </div>
+
+            <div class="img__legende--container">
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu5.webp" alt="1200  Château de Nottingham">
+                </div>
+                <figure class="frise__figure-r">
+                    <figcaption class="frise__legende">1200 Nottingham Castle</figcaption>
+                </figure>
+            </div>
+            
+            <p>Nottingham is in England and was called Snotingeham before.
+            </p>
+
+            <h2>The Council House of Nottingham </h2>
+            <p>Located in the city center, it is a recent monument built in 1927. There is a "twin" Council House in Birmingham very similar by its dome where the coachman is located.
+                In front of this building, there is the Old Market Square which is a large square.                            
+            </p>
+ 
+            <h2>Robin Hood Statue</h2>
+            <p>Nottingham is the city of the hero who steals from the rich to help the poor in need. In Nottingham there is Sherwood Forest, the forest of Robin Hood and its statue.               
+            </p>
+            
+            <div class="path__frise3">
+            </div>
+            <div class="img__legende--container">
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu6.webp" alt="Forêt de Sherwood">
+                </div>
+                <figure class="frise__figure-r">
+                    <figcaption class="frise__legende">Sherwood Forest</figcaption>
+                </figure>
+            </div>
+
+            <div class="plane__frise3">
+            </div>
+
+            <div class="img__legende--container">
+                <figure class="frise__figure-l">
+                    <figcaption class="frise__legende">Robin Hood statue</figcaption>
+                </figure>
+                <div class="frise__alignement">
+                    <img class="frise__img" src="../public/img/img/pagelieux/lieu7.webp" alt="Statue de Robin des Bois">
+                </div>
+            </div>
+      
+            <h2>The castle of Nottingham</h2>
+            <p>It is near the statue of Robin Hood in the city, it is very imposing by its round towers. Originally this castle was a wooden castle founded by William the Conqueror in 1067. But it was destroyed and rebuilt by a stone castle by Henry I in 1200.
+            </p>
+            <p>Nottingham is a city full of history essentially rooted in the Middle Ages, we can see it because of the buildings.
             </p>
         </section>
 
         <section>
-            <h2>The Council House</h2>
-            <p>Situé au cœur de la ville, c'est un monument récent construit en 1927. 
-                Il existe un Council House jumeau à Birmingham très semblable par son dôme où se situe le cocher.
-                Devant ce bâtiment se trouve le Old Market Square qui est une grand place, en été il y a des jets d’eau.                
-            </p>
-        </section>
-
-        <section>
-            <h2>Statue Robin de Bois</h2>
-            <p>Ville culte de de l’héros qui vole au riche pour aider les pauvres dans le besoin. 
-                À Nottingham se trouve Sherwood Forest, soit la forêt de Robin des Bois et sa statue.                
-            </p>
-            <p>Je conseille de voir la forêt en été (c’est sûrement plus sympa quand l’arbre est fleuri). 
-                On y est allé en février et c’est bien triste de voir ce grand arbre avec uniquement des branches.</p>
-            <img src="../public/img/img/pagelieux/lieu6.webp" alt="Forêt de Sherwood">
-            <figure>
-                <figcaption>Forêt de Sherwood</figcaption>
-            </figure>
-            <img src="../public/img/img/pagelieux/lieu7.webp" alt="Statue de Robin des Bois">
-            <figure>
-                <figcaption>Statue de Robin des Bois</figcaption>
-            </figure>
-        </section>
-
-        <section>
-            <h2>Le château de Nottingham</h2>
-            <p>Il se trouve à proximité de la statue de Robin des Bois en ville, il est très imposant par ses tours rondes. 
-                À l’origine ce château était un château en bois fondé par Guillaume le Conquérant en 1067. Mais il a été détruit et reconstruit par un château de pierre par Henri Ier en 1200.
-            </p>
-            <p>Nottingham est une ville pleine d’histoire essentiellement ancrée dans le Moyen-Âge, les bâtiments peuvent en témoigner.</p>
-        </section>
-
-        <section>
-            <h2>À voir aussi</h2>
-            <ul>
+            <div class="header__body--titre">
+                <span class="header_titre--barre"></span>
+                <h2 class="section__avoirplus">You can be interested</h2>
+                <span class="header_titre--barre"></span>
+            </div>
+            
+            <article class="preview">
                 <a href="sionvoyageait.html">
-                    <li class="preview">
-                        <p class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-5.webp" alt="avion dans le film Le Vent se lève">
-                        <h3 class="preview__titre">Et si on voyageait ?</h3></p>
-                        <p class="preview__description">Moyens de transports que vous connaissez et empruntez probablement tous les jours. Comment ont-ils évolué ?</p>
-                        <p class="preview__alignementdroite">en lire plus</p>
-                    </li>
+                <div class="preview__wrap-card">
+                    <div class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-5.webp" alt="avion dans le film Le Vent se lève"></div>
+                    <div class="preview__text-wrap"><h3 class="preview__titre">And if we travel a little ?
+                    </h3>
+                    <p class="preview__description">MWays of transport that you use probably everyday. Do you want to see its evolution ?
+                    </p></div>
+                </div>
+                <p class="preview__alignementdroite">read more</p>
                 </a>
-            </ul>
+            </article>
         </section>
     </main>
 
     <footer>
-        <h2>MENTIONS LÉGALES</h2>
-        <p>Projet réalisé dans le cadre d’un exercice au <a href="http://mmimontbeliard.com/">département MMi de Montbéliard</a>
-        </p>
-        <p>Marion Mura MMi 1 groupe B2 
-            <a href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a>
-        </p>
-        <a href="#"><img src="../public/img/icons/logov2.webp" alt="logo pour retour à la page d'accueil">
-        </a>
-        <a href="http://mmimontbeliard.com/">
-            <img src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
-        </a>
+        <h2 class="footer__h2">LEGAL MENTION</h2>
+        <p class="footer__p">A project realised in a exercise for the <a class="footer__a" href="http://mmimontbeliard.com/">MMi département of Montbéliard</a></p>
+        <p class="footer__p--block">Marion Mura</p>
+        <p class="footer__p--block">MMi 1 group B2</p>
+        <p class="footer__p--block"><a class="footer__a" href="mailto:marion.mura090@gmail.com">marion.mura090@gmail.com</a></p>
+        
+        <div class="footer__container footer_border">
+            <a class="footer__btn" href="contacts.html">Contact</a>
+            <a class="footer__btn" href="apropos.html">About me</a>
+            <a class="footer__btn" href="autresprojets.html">Other projects</a>
+        </div>
+        <div class="footer__container">
+            <a class="footer__logo--a" href="/FR/apropos.html">
+                <img  class="footer__logo" src="../public/img/icons/logov2.webp" alt="logo pour en savoir plusretour à la page d'accueil">
+            </a>
+            <a class="footer__logo--a" href="http://mmimontbeliard.com/">
+                <img class="footer__logo--mmi" src="../public/img/icons/mmilogo.webp" alt="logo du département MMi cliquable">
+            </a>
+            <a class="footer__logo--a" href="https://github.com/MMI-SAE-105/2022-sae105-projet-marionmura">
+                <img class="footer__logo--github" src="../public/img/icons/github.svg" alt="logo projet github">
+            </a>
+            <a class="footer__logo--a" href="https://www.figma.com/proto/ZEwCbbJKhCPRFDCW9Aj3ut/Maquettes-projet-individuel-%E2%80%94-Marion-MURA?node-id=1346%3A3274&scaling=scale-down&page-id=1346%3A2817&starting-point-node-id=1346%3A3274&show-proto-sidebar=1">
+                <img class="footer__logo--figma" src="../public/img/icons/figma.svg" alt="logo projet figma">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
