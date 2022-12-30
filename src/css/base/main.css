@@ -24,9 +24,10 @@ body{
     text-align:center;
 }
 
-h1{
+.h1{
     font-family: var(--font-title);
     font-size:var(--h1--titres-articles);
+    font-weight:bold;
     letter-spacing: 1,5px;
     padding: 10px 1rem;
 }
