@@ -103,6 +103,11 @@ figcaption, .extract {
     content:"”";
 }
 
+.glossaire__def{
+    padding:0;
+    margin:10px;
+}
+
 button{
   appearance: none;
   border: none;

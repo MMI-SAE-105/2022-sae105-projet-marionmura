@@ -52,6 +52,21 @@ img {
   height:auto;
 }
 
+/*img glossaire*/
+.glossaire__img{
+  width:150px;
+  margin:10px;
+  border-radius:5px;
+}
+
+.img__glossaire2{
+  margin:4%;
+  width: 92%;
+  position:relative;
+  display:block;
+  border-radius:5px;
+}
+
 /*vidéos*/
 
 video{
