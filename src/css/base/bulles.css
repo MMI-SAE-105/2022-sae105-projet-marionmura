@@ -18,3 +18,37 @@
     padding:5px 16px;
     margin:0;
 }
+
+/*page contact*/
+.bulle_contacts{
+    background-color:var(--blanc);
+    border-radius:5px;
+    box-shadow:var(--articleblur);
+    width:auto;
+    margin:15px; /*2% avant*/
+    padding: 1rem 0;
+}
+
+.bulle__dotted2{
+    border:2px dashed  var(--gris);
+    width:85%;
+    border-radius:5px;
+    padding:5px;
+    margin:5px 15px;
+}
+
+.label{
+    padding:1px 16px;
+    margin-top:50px;
+    font-family: var(--font-body);
+    font-weight: bold;
+}
+
+.send__button{
+    padding:15px 55px;
+    background-color: var(--bleufooter);
+    font-family: var(--font-body);
+    color:var(--blanc);
+    margin:0 25%;
+    border-radius:5px;
+}

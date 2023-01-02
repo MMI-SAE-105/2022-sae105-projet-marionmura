@@ -16,9 +16,9 @@
 }
 
 .header__logo-site{
-    width:35%;
+    width:33%;
     height:auto;
-    padding:1em;
+    margin:10px 15px;
 }
 
 .header__logo-en{
