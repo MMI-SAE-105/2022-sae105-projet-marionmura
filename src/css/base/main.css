@@ -59,16 +59,51 @@ p{
     padding-top:0;
 }
 
+figcaption{
+    text-align: center;
+}
 
 figcaption, .extract {
     font-family:var(--font-body);
     font-size:var(--légendes);
     color:var(--gris);
-    text-align: center;
 }
 
-.livre_caption{
+.livre_caption, .livre_caption--en{
     color:var(--gris);
+    line-height:25px;
+    text-align: center;
+    text-align: center;
+    padding-bottom:0;
+}
+
+
+.extract{
+    text-align: center;
+    padding:0;
+    font-style:italic;
+}
+.livre_caption::before, .livre_caption::after, .livre_caption--en::before, .livre_caption--en::after{
+    font-family:var(--guillemets);
+    font-weight: bold;
+    font-style:normal;
+    font-size:20px;
+}
+
+.livre_caption::before{
+    content:"«";
+}
+
+.livre_caption::after{
+    content:"»";
+}
+
+.livre_caption--en::before{
+    content:"“";
+}
+
+.livre_caption--en::after{
+    content:"”";
 }
 
 

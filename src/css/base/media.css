@@ -35,7 +35,9 @@ img {
   position:relative;
   display:block;
   padding-top:1rem;
-  margin:4% 4%;
+  margin-bottom:4%; 
+  margin-right:4%;
+  margin-left:4%;
 }
 
 /*page à propos*/
