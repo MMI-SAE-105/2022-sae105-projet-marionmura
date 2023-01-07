@@ -23,12 +23,20 @@
 .cards__icon{
     width:30px;
     height:auto;
-    margin:20px auto;
+    margin:15px auto;
     text-align: end;
 }
 
 .cards__p{
     color:var(--bleufooter);
     margin:0;
-    padding:0 16px;
+    padding:0 8px;
+}
+
+.cards h2{
+    font-family: var(--font-title);
+    font-size:20px;
+    margin-bottom: 10px;
+    padding-left:8px;
+    padding-right:8px;
 }
