@@ -23,7 +23,7 @@ ul li {
     padding:0;
 }
 
-/**/
+/*overlayyy */
 .overlay {
     /* Sit on top of the page content */
     position:absolute;
@@ -37,7 +37,7 @@ ul li {
     bottom:0;
     /* Black background with opacity */
     background-color:var(--bleufooter);
-    opacity:0. 9;
+    opacity:0. 5;
     /* Add a pointer on hover */
     cursor:pointer;
     /* Use a grid for easy centering */
@@ -81,11 +81,10 @@ ul li {
 
 .overlay> figure {
     /* No margin */
-    margin:0;
+    margin:10%;
     /* 1rem padding */
     padding:1rem;
-    /* White border of 2px */
-    border: 2px solid #fff;
+
 }
 
 .overlay>figure>img {
