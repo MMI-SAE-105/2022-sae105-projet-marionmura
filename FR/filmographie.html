@@ -92,14 +92,14 @@
             <span class="header_titre--barre"></span>
         </div>
 
-        <section class="bulle">
+        <div class="bulle">
             <img class="img__article" src="../public/img/img/pagefilmographie/filmo.webp" alt="image du chateau de cagliostro">
             <p class="h1">La filmographie d’Hayao Miyazaki</p>
             <p>Hayao Miyazaki est un célèbre réalisateur de la plupart des films d’animation du studio Ghibli. 
                     Voici un grand nombre de ses réalisations sur cette page.
             </p>
 
-            <ul class="film__container" x-data="{imgaffichee:null, 
+            <div class="film__container" x-data="{imgaffichee:null, 
                                                  imgdata: [
                                                     { id: 2, src:'../public/img/img/pagefilmographie/filmo2.webp', alt:'1979 Le Château de Cagliostro'},
                                                     { id: 3, src:'../public/img/img/pagefilmographie/filmo3.webp', alt:'1984 Nausicaä de la Vallée du Vent'},
@@ -115,32 +115,31 @@
                                                     { id: 13, src:'../public/img/img/pagefilmographie/filmo13.webp', alt:'2014 Souvenirs de Marnie'}
                                                  ]}">
                 <template x-for="nimg in imgdata" :key="nimg.id">
-                    <li class="film__classe">
+                    <div class="film__classe">
                         <img class="img__miniature" :src="nimg.src" :alt="nimg.alt" 
                         @click="imgaffichee=nimg.src">
                         <p class="p__miniature" x-text="nimg.alt"></p>
-                    </li>
+                    </div>
                 </template>
-               
-            
+
                 <div class="overlay" x-show="imgaffichee" @click="imgaffichee=null" @keyup.escape.window="imgaffichee=null">
-                    <figure><img :src="imgaffichee" alt="image">
+                    <figure><img class="img__grand" :src="imgaffichee" alt="imgaffichee">
                         <p x-text="imgaffichee"></p>
                     </figure>
                 </div>
-            </ul>
-            <script>
-                function sayHello({ imgaffichee}) {
-                    alert(imgaffichee)
-                }
-            </script>
 
-        </section>
+            </div>
+            
+            
+            
+            
+
+        </div>
 
         <section>
             <div class="header__body--titre">
                 <span class="header_titre--barre"></span>
-                <h2 class="section__avoirplus">À voir aussi</h1>
+                <h2 class="section__avoirplus">À voir aussi</h2>
                 <span class="header_titre--barre"></span>
             </div>
 

@@ -37,7 +37,7 @@ ul li {
     bottom:0;
     /* Black background with opacity */
     background-color:var(--bleufooter);
-    opacity:0.5;
+    opacity:0. 9;
     /* Add a pointer on hover */
     cursor:pointer;
     /* Use a grid for easy centering */
@@ -47,8 +47,9 @@ ul li {
     align-items:center;
 }
 
-img{
+.img__grand{
     max-width:100%;
+    margin: 15px;
 }
 
 .overlay::after {
