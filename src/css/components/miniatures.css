@@ -26,70 +26,50 @@ ul li {
 /*overlayyy */
 .overlay {
     /* Sit on top of the page content */
-    position:absolute;
+    position:fixed;
     /* Stay at the top */
     top:0; /*image placée entre top et bottom*/
-    /* Stay at the left */
     left:0;
-    /* Stay at the right */
     right:0;
-    /* Stay at the bottom */
     bottom:0;
-    /* Black background with opacity */
-    background-color:var(--bleufooter);
-    opacity:0. 5;
-    /* Add a pointer on hover */
+    background-color:rgba(4, 47, 110, 0.8);
     cursor:pointer;
     /* Use a grid for easy centering */
     display:grid;
-    /* Center vertically and horizontally */
     place-content:center;
     align-items:center;
-}
-
-.img__grand{
-    max-width:100%;
-    margin: 15px;
 }
 
 .overlay::after {
     /* Add content : "X" */
     content:"X";
-    /* White text color */
     color:rgba(255,255,255);
     /* Black background color */
-    background-color:rgba(0,0,0,0);
-    /* Font family "sans-serif" */
-    font-family:sans-serif;
-    /* Centered text */
+    font-family:var(--font-body);
     text-align:center;
-    /* Line height ( idem height ) */
     line-height:2px;
-    /* Display as a block */
     display:block;
-    /* Position absolute */
     position:absolute;
-    /* 1rem from the top */
+    /*pour la position de la X*/
     top:10rem;
-    /* 1rem from the right */
     right:1rem;
-    /* 2rem width */
     width:2rem;
-    /* 2rem height */
     height:2rem;
 }
 
 .overlay> figure {
-    /* No margin */
     margin:10%;
-    /* 1rem padding */
     padding:1rem;
-
 }
 
-.overlay>figure>img {
-    /* Max width 100% for responsive image */
+.img__grand{
     max-width:100%;
-    /* Height auto for keeping the ratio */
     height:auto;
+}
+
+.overlay__texte{
+    display:block;
+    color:var(--blanc);
+    padding-right:15px;
+    width:100px;
 }

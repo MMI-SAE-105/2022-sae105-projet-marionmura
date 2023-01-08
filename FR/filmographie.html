@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmographie</title>
 
-    <link rel="icon" type="image/webp" href="../public/img/icons/iconvalise.svg">
+    <link rel="icon" type="image/svg" href="../public/img/icons/iconvalise.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 
     <link rel="stylesheet" href="../src/css/style.css">
@@ -125,16 +125,11 @@
                 </template>
 
                 <div class="overlay" x-show="imgaffichee" @click="imgaffichee=null" @keyup.escape.window="imgaffichee=null">
-                    <figure><img class="img__grand" :src="imgaffichee" alt="imgaffichee">
-                        <!-- <p x-text="imgaffichee"></p> -->
+                    <figure><img class="img__grand" :src="imgaffichee" :alt="imgaffichee" x-ref="image">
+                        <!-- <p class="overlay__texte" x-show="$refs.image.alt"></p> -->
                     </figure>
                 </div>
-
             </div>
-            
-            
-            
-            
 
         </div>
 
