@@ -51,6 +51,5 @@
     color:var(--blanc);
     margin:0 25%;
     border-radius:5px;
-    border:var(--bleufooter);
     box-shadow:var(--articleblur);
 }
