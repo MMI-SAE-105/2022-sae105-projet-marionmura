@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +8,24 @@
 
     <link rel="icon" type="image/svg" href="../public/img/icons/iconvalise.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
-
     <link rel="stylesheet" href="../src/css/style.css">
 
 </head>
+
 <body>
     <header class="header"  x-data="{menuIsOpen:false}">
         <a class="header__logo-link" href="index.html">
             <img class="header__logo-site header__logo" src="../public/img/icons/logov1.webp" alt="logo du site"></a>
-        <a class="header__EN" href="../EN/index.html">
-            <img class="header__logo-en header__logo" src="../public/img/icons/ENicone.svg" alt="icone EN">
+        <a class="header__EN" href="../FR/filmographie.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/FRicone.svg" alt="icone FR">
         </a>
         <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
-            <span class="menubtn__bar"></span>
+                <span class="menubtn__bar"></span>
         </button>
 
         <nav class="header__menu menu" x-show="menuIsOpen">
             <p class="menu__h1 h1">Menu</p>
-            
+
             <div class="menu--titre">
                 <span class="menu__barre"></span>
             </div>
@@ -33,11 +33,11 @@
             <ul class="menu__list">
                 <li class="menu__item"> 
                     <a class="menu__link" href="leventseleve.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
-                        Le Vent se lève</a>
+                        The wind rises</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="filmographie.html"><img class="menu__icone" src="../public/img/icons/film.svg" alt="player icone" >
-                        Myazaki et sa filmographie</a>
+                        Myazaki and his Filmography </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="headup.html"><img class="menu__icone" src="../public/img/icons/headphones.svg" alt="player icone" >
@@ -45,7 +45,7 @@
                 </li>
                 <li class="menu__item"> 
                     <a class="menu__link" href="cartographie.html"><img class="menu__icone" src="../public/img/icons/book.svg" alt="player icone" >
-                        Cartographie d'un univers</a>
+                        Cartography of a universe</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="nottingham.html"><img class="menu__icone" src="../public/img/icons/gps.svg" alt="player icone" >
@@ -53,11 +53,11 @@
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="sionvoyageait.html"><img class="menu__icone" src="../public/img/icons/earth.svg" alt="player icone" >
-                        Et si on voyageait ?</a>
+                        And if we travel a little ?</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="ressourcesterrestres.html"><img class="menu__icone" src="../public/img/icons/star.svg" alt="player icone" >
-                        Ressources et déclin</a>
+                        Resources and decline</a>
                 </li>
             </ul>
 
@@ -67,7 +67,7 @@
 
             <ul class="menu__list menu_4">
                 <li class="menu__item-dessous">
-                    <a class="menu__link" href="glossaire.html">Glossaire
+                    <a class="menu__link" href="glossaire.html">Glossary
                     <img class="menu__icone2" src="../public/img/icons/glossaire.svg" alt="glossaire icone"></a>
                 </li>
                 <li class="menu__item-dessous">
@@ -75,92 +75,67 @@
                     <img class="menu__icone2" src="../public/img/icons/plane.svg" alt="contacts icone"></a>
                 </li>
                 <li class="menu__item-dessous">
-                    <a class="menu__link" href="autresprojets.html">Autres projets
+                    <a class="menu__link" href="autresprojets.html">Other projects
                     <img class="menu__icone2" src="../public/img/icons/rocket.svg" alt="autres icone"></a>
                 </li>
                 <li class="menu__item-dessous">
-                    <a class="menu__link" href="apropos.html">À propos
+                    <a class="menu__link" href="apropos.html">About me
                     <img class="menu__icone2" src="../public/img/icons/user.svg" alt="about icone"></a>
                 </li>
             </ul>
-        </nav>  
+        </nav>
     </header>
 
 
     <main>
         <div class="header__body--titre">
             <span class="header_titre--barre"></span>
-            <h1 class="header__titre">Filmographie</h1>
+            <h1 class="header__titre">Filmography</h1>
             <span class="header_titre--barre"></span>
         </div>
 
-        <section class="bulle">
+        <div class="bulle">
             <img class="img__article" src="../public/img/img/pagefilmographie/filmo.webp" alt="image du chateau de cagliostro">
-            <p class="h1">La filmographie d’Hayao Miyazaki</p>
-            <p>Hayao Miyazaki est un célèbre réalisateur de la plupart des films d’animation du studio Ghibli. 
-                    Voici un grand nombre de ses réalisations sur cette page.
+            <p class="h1">Filmography of Hayao Miyazaki</p>
+            <p>Hayao Miyazaki is a famous realisator who works at Studio Ghibli. There is a panel of its movie. 
             </p>
 
-            <ul class="film__container" x-data="{imgaffichee:false}">
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo2.webp" alt="1979 Le Château de Cagliostro" 
-                    @click="imgaffichee='../public/img/img/pagefilmographie/filmo2.webp'">
-                    <p class="p__miniature">1979 Le Château de Cagliostro </p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo3.webp" alt="1984 Nausicaä de la Vallée du Vent">
-                    <p class="p__miniature">1984 Nausicaä de la Vallée du Vent</p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo4.webp" alt="1986 Le Château dans le ciel ">
-                    <p class="p__miniature">1986 Le Château dans le ciel </p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo5.webp" alt="1988 Mon voisin Totoro ">
-                    <p class="p__miniature">1988 Mon voisin Totoro </p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo6.webp" alt="1989 Kiki la petite sorcière">
-                    <p class="p__miniature">1989 Kiki la petite sorcière</p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo7.webp" alt="1992 Porco Rosso">
-                    <p class="p__miniature">1992 Porco Rosso</p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo12.webp" alt="1992 Porco Rosso">
-                    <p class="p__miniature">1995 Si tu tends l'oreille</p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo8.webp" alt="1997 Princesse Mononoké">
-                    <p class="p__miniature">1997 Princesse Mononoké </p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo9.webp" alt="2001 Le Voyage de Chihiro ">
-                    <p class="p__miniature">2001 Le Voyage de Chihiro </p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo10.webp" alt="2004 Le Château ambulant">
-                    <p class="p__miniature">2004 Le Château ambulant</p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo11.webp" alt="2013 Le vent se lève ">
-                    <p class="p__miniature">2013 Le vent se lève </p>
-                </li>
-                <li class="film__classe">
-                    <img class="img__miniature" src="../public/img/img/pagefilmographie/filmo13.webp" alt="2013 Le vent se lève ">
-                    <p class="p__miniature">2014 Souvenirs de Marnie</p>
-                </li>
-            </ul>
-            <!--<div class="overlay" x-show="imgaffichee" @click="imgaffichee = !imgaffichee">
-                <figure><img :src="imgaffichee" alt="image galerie test"></figure>
-            </div>-->
-        </section>
+            <div class="film__container" x-data="{imgaffichee:null, 
+                                                 imgdata: [
+                                                    { id: 2, src:'../public/img/img/pagefilmographie/filmo2.webp', alt:'1979 Castle of Cagliostro'},
+                                                    { id: 3, src:'../public/img/img/pagefilmographie/filmo3.webp', alt:'1984 Nausicaä Valley of the Wind'},
+                                                    { id: 4, src:'../public/img/img/pagefilmographie/filmo4.webp', alt:'1986 Castle in the sky'},
+                                                    { id: 5, src:'../public/img/img/pagefilmographie/filmo5.webp', alt:'1988 My Neighbor Totoro'},
+                                                    { id: 6, src:'../public/img/img/pagefilmographie/filmo6.webp', alt:'1989 Kiki’s Delivery Service'},
+                                                    { id: 7, src:'../public/img/img/pagefilmographie/filmo7.webp', alt:'1992 Porco Rosso'},
+                                                    { id: 8, src:'../public/img/img/pagefilmographie/filmo12.webp', alt:'1995 Whisper of the hHart'},
+                                                    { id: 9, src:'../public/img/img/pagefilmographie/filmo8.webp', alt:'1997 Princess Mononoke'},
+                                                    { id: 10, src:'../public/img/img/pagefilmographie/filmo9.webp', alt:'2001 Spirited Away'},
+                                                    { id: 11, src:'../public/img/img/pagefilmographie/filmo10.webp', alt:'2004 Howl’s Moving Castle'},
+                                                    { id: 12, src:'../public/img/img/pagefilmographie/filmo11.webp', alt:'2013 The Wind Rises'},
+                                                    { id: 13, src:'../public/img/img/pagefilmographie/filmo13.webp', alt:'2014 When Marnie was there'}
+                                                 ]}">
+                <template x-for="nimg in imgdata" :key="nimg.id">
+                    <div class="film__classe">
+                        <img class="img__miniature" :src="nimg.src" :alt="nimg.alt" 
+                        @click="imgaffichee=nimg.src">
+                        <p class="p__miniature" x-text="nimg.alt"></p>
+                    </div>
+                </template>
+
+                <div class="overlay" x-show="imgaffichee" @click="imgaffichee=null" @keyup.escape.window="imgaffichee=null">
+                    <figure><img class="img__grand" :src="imgaffichee" :alt="imgaffichee" x-ref="image">
+                        <!-- <p class="overlay__texte" x-show="$refs.image.alt"></p> -->
+                    </figure>
+                </div>
+            </div>
+
+        </div>
 
         <section>
             <div class="header__body--titre">
                 <span class="header_titre--barre"></span>
-                <h2 class="section__avoirplus">À voir aussi</h1>
+                <h2 class="section__avoirplus">À voir aussi</h2>
                 <span class="header_titre--barre"></span>
             </div>
 
@@ -168,26 +143,27 @@
                 <a href="leventseleve.html">
                 <div class="preview__wrap-card">
                     <div class="preview__alignement"><img class="preview__img" src="../public/img/img/homepage/imagepreview-0.webp" alt="Jirô et son avion"></div>
-                    <div class="preview__text-wrap"><h3 class="preview__titre">"Le vent se lève"</h3>
-                    <p class="preview__description">Sorti en 2013, ce film d'animation des studios Ghibli témoigne d'une histoire touchante entre un ingénieur et une jeune fille.</p></div>
+                    <div class="preview__text-wrap"><h3 class="preview__titre">"The wind rises"</h3>
+                    <p class="preview__description">Released in 2013, this movie from the Ghibli studios is about a love story between an engineer and a young girl.
+                    </p></div>
                 </div>
-                <p class="preview__alignementdroite">en lire plus</p>
+                <p class="preview__alignementdroite">read more</p>
                 </a>
             </article>
         </section>
     </main>
 
     <footer>
-        <h2 class="footer__h2">MENTIONS LÉGALES</h2>
-        <p class="footer__p">Projet réalisé dans le cadre d’un exercice au <a class="footer__a" href="http://mmimontbeliard.com/">département MMi de Montbéliard</a></p>
+        <h2 class="footer__h2">LEGAL MENTION</h2>
+        <p class="footer__p">A project realised in an exercise for the <a class="footer__a" href="http://mmimontbeliard.com/">MMi département of Montbéliard</a></p>
         <p class="footer__p--block"><a class="footer__a" href="mailto:marion.mura090@gmail.com">Marion Mura</a>
         </p>        
         <p class="footer__p--block">MMi 1 group B2</p>
         
         <div class="footer__container footer_border">
             <a class="footer__btn" href="contacts.html">Contact</a>
-            <a class="footer__btn" href="apropos.html">À propos</a>
-            <a class="footer__btn" href="autresprojets.html">Autres projets</a>
+            <a class="footer__btn" href="apropos.html">About me</a>
+            <a class="footer__btn" href="autresprojets.html">Other projects</a>
         </div>
         <div class="footer__container">
             <a class="footer__logo--a" href="/FR/apropos.html">

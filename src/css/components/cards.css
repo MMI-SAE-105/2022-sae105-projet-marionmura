@@ -28,13 +28,14 @@
 }
 
 .cards__p{
-    color:var(--bleufooter);
+    color:var(--noir);
     margin:0;
     padding:0 8px;
 }
 
 .cards h2{
     font-family: var(--font-title);
+    color:var(--noir);
     font-size:20px;
     margin-bottom: 10px;
     padding-left:8px;
